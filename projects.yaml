@@ -1,0 +1,37 @@
+projects:
+  - title: "AI-Covid-19"
+    date: "2020-07-19"  # approximate date, replace as needed
+    github_url: "https://github.com/nicolaefilat/AI-Covid-19"
+    description: "A Covid-19 simulation game where players infect as many people as possible."
+    tags: ["C#", "Game Development", "AI", "3D"]
+
+  - title: "Movies-Script-Helper"
+    date: "2021-02-15"
+    github_url: "https://github.com/nicolaefilat/Movies-Script-Helper"
+    description: "Python scripts for subtitle management and directory organization."
+    tags: ["Python", "Automation"]
+
+  - title: "Quasar-Todo-App"
+    date: "2022-06-10"
+    github_url: "https://github.com/nicolaefilat/Quasar-Todo-App"
+    description: "A cross-platform to-do app built with Quasar and Vue."
+    tags: ["Vue", "Quasar", "Cross-Platform Development"]
+
+  - title: "RowReductionJavaFX"
+    date: "2021-09-20"
+    github_url: "https://github.com/nicolaefilat/RowReductionJavaFX"
+    description: "Java application that displays row reduction steps with LaTeX integration."
+    tags: ["Java", "JavaFX", "UI"]
+
+  - title: "XKNK-Automatisation"
+    date: "2021-07-16"
+    github_url: "https://github.com/nicolaefilat/XKNK-Automatisation"
+    description: "Python automation scripts for various tasks."
+    tags: ["Python", "Automation"]
+
+  - title: "Space Invaders in Assembly"
+    date: "2021-10-01"
+    description: "A space invaders game written entirely in x86 assembly. This was a bonus project in a team for my Computer Architecture class."
+    video_url: "https://photos.google.com/share/AF1QipP62oKHpP53dQcQ9cWUJGQQ12fGLwyfKQxp4iuO4s6nAnFrEGwWsQSqAEOcc2Ra-A?key=bklxZzNkRFNMOUVaTlJtaEJYZDN1MFRSdWFMWHBn"
+    tags: ["Python", "Automation"]
+

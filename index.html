@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 text-gray-900">
+  <!-- Header Section -->
+  <header class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+      <h1 class="text-3xl font-bold">My Portfolio</h1>
+      <nav>
+        <a href="#projects" class="text-gray-300 hover:text-white px-4">Projects</a>
+        <a href="#skills" class="text-gray-300 hover:text-white px-4">Skills</a>
+        <a href="#contact" class="text-gray-300 hover:text-white px-4">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gray-900 text-white py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-semibold mb-4">Welcome to My Portfolio</h2>
+      <p class="text-gray-400 mb-8">Showcasing my projects, skills, and experiences in web development.</p>
+      <a href="#projects" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full">
+        View My Work
+      </a>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-semibold text-center mb-10">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="bg-white shadow-lg rounded-lg flex flex-col p-6">
+          <h3 class="text-xl font-semibold mb-2 inline-flex align-centerg gap-2">AI-Covid-19
+            <a href="https://github.com/nicolaefilat/AI-Covid-19" target="_blank" rel="noopener noreferrer"
+              class="relative group text-blue-500 hover:text-blue-700 inline-flex justify-center items-center">
+              <!-- GitHub icon from Font Awesome or custom SVG -->
+              <svg class="w-5 h-5 inline" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 .3c-6.6 0-12 5.4-12 12 0 5.3 3.4 9.8 8.2 11.3.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.5-4-1.5-.5-1.2-1.3-1.6-1.3-1.6-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.3 1.8 1.3 1.1 1.9 3 .6 3.7.5.1-.8.4-1.4.7-1.7-2.6-.3-5.4-1.3-5.4-5.8 0-1.3.5-2.5 1.3-3.3-.1-.3-.5-1.4.1-2.9 0 0 1-.3 3.2 1.3 1-.3 2.1-.4 3.2-.4s2.2.1 3.2.4c2.1-1.6 3.2-1.3 3.2-1.3.6 1.5.2 2.6.1 2.9.8.8 1.3 1.9 1.3 3.3 0 4.6-2.8 5.5-5.5 5.8.5.4.8 1.1.8 2.3v3.4c0 .4.3.8.8.6 4.8-1.5 8.2-6 8.2-11.3 0-6.6-5.4-12-12-12z" />
+              </svg>
+              <span
+                class="absolute bottom-full left-1/2 transform -translate-x-1/2 p-2 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                GitHub
+              </span>
+            </a>
+          </h3>
+          <p class="text-gray-500 text-sm mb-2">2020-07-19</p>
+          <p class="text-gray-700 mb-4">A Covid-19 simulation game where players infect as many people as possible.</p>
+
+
+          <div class="mt-auto flex flex-wrap gap-2 pt-4">
+            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">C#</span>
+            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Game Development</span>
+            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">AI</span>
+            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">3D</span>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg flex flex-col p-6">
+          <h3 class="text-xl font-semibold mb-2 inline-flex align-centerg gap-2">Movies-Script-Helper
+            <a href="https://github.com/nicolaefilat/Movies-Script-Helper" target="_blank" rel="noopener noreferrer"
+              class="relative group text-blue-500 hover:text-blue-700 inline-flex justify-center items-center">
+              <!-- GitHub icon from Font Awesome or custom SVG -->
+              <svg class="w-5 h-5 inline" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 .3c-6.6 0-12 5.4-12 12 0 5.3 3.4 9.8 8.2 11.3.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.5-4-1.5-.5-1.2-1.3-1.6-1.3-1.6-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.3 1.8 1.3 1.1 1.9 3 .6 3.7.5.1-.8.4-1.4.7-1.7-2.6-.3-5.4-1.3-5.4-5.8 0-1.3.5-2.5 1.3-3.3-.1-.3-.5-1.4.1-2.9 0 0 1-.3 3.2 1.3 1-.3 2.1-.4 3.2-.4s2.2.1 3.2.4c2.1-1.6 3.2-1.3 3.2-1.3.6 1.5.2 2.6.1 2.9.8.8 1.3 1.9 1.3 3.3 0 4.6-2.8 5.5-5.5 5.8.5.4.8 1.1.8 2.3v3.4c0 .4.3.8.8.6 4.8-1.5 8.2-6 8.2-11.3 0-6.6-5.4-12-12-12z" />
+              </svg>
+              <span
+                class="absolute bottom-full left-1/2 transform -translate-x-1/2 p-2 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                GitHub
+              </span>
+            </a>
+          </h3>
+          <p class="text-gray-500 text-sm mb-2">2021-02-15</p>
+          <p class="text-gray-700 mb-4">Python scripts for subtitle management and directory organization.</p>
+
+
+          <div class="mt-auto flex flex-wrap gap-2 pt-4">
+            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Python</span>
+            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Automation</span>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg flex flex-col p-6">
+          <h3 class="text-xl font-semibold mb-2 inline-flex align-centerg gap-2">Quasar-Todo-App
+            <a href="https://github.com/nicolaefilat/Quasar-Todo-App" target="_blank" rel="noopener noreferrer"
+              class="relative group text-blue-500 hover:text-blue-700 inline-flex justify-center items-center">
+              <!-- GitHub icon from Font Awesome or custom SVG -->
+              <svg class="w-5 h-5 inline" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 .3c-6.6 0-12 5.4-12 12 0 5.3 3.4 9.8 8.2 11.3.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.5-4-1.5-.5-1.2-1.3-1.6-1.3-1.6-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.3 1.8 1.3 1.1 1.9 3 .6 3.7.5.1-.8.4-1.4.7-1.7-2.6-.3-5.4-1.3-5.4-5.8 0-1.3.5-2.5 1.3-3.3-.1-.3-.5-1.4.1-2.9 0 0 1-.3 3.2 1.3 1-.3 2.1-.4 3.2-.4s2.2.1 3.2.4c2.1-1.6 3.2-1.3 3.2-1.3.6 1.5.2 2.6.1 2.9.8.8 1.3 1.9 1.3 3.3 0 4.6-2.8 5.5-5.5 5.8.5.4.8 1.1.8 2.3v3.4c0 .4.3.8.8.6 4.8-1.5 8.2-6 8.2-11.3 0-6.6-5.4-12-12-12z" />
+              </svg>
+              <span
+                class="absolute bottom-full left-1/2 transform -translate-x-1/2 p-2 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                GitHub
+              </span>
+            </a>
+          </h3>
+          <p class="text-gray-500 text-sm mb-2">2022-06-10</p>
+          <p class="text-gray-700 mb-4">A cross-platform to-do app built with Quasar and Vue.</p>
+
+
+          <div class="mt-auto flex flex-wrap gap-2 pt-4">
+            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Vue</span>
+            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Quasar</span>
+            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Cross-Platform Development</span>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg flex flex-col p-6">
+          <h3 class="text-xl font-semibold mb-2 inline-flex align-centerg gap-2">RowReductionJavaFX
+            <a href="https://github.com/nicolaefilat/RowReductionJavaFX" target="_blank" rel="noopener noreferrer"
+              class="relative group text-blue-500 hover:text-blue-700 inline-flex justify-center items-center">
+              <!-- GitHub icon from Font Awesome or custom SVG -->
+              <svg class="w-5 h-5 inline" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 .3c-6.6 0-12 5.4-12 12 0 5.3 3.4 9.8 8.2 11.3.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.5-4-1.5-.5-1.2-1.3-1.6-1.3-1.6-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.3 1.8 1.3 1.1 1.9 3 .6 3.7.5.1-.8.4-1.4.7-1.7-2.6-.3-5.4-1.3-5.4-5.8 0-1.3.5-2.5 1.3-3.3-.1-.3-.5-1.4.1-2.9 0 0 1-.3 3.2 1.3 1-.3 2.1-.4 3.2-.4s2.2.1 3.2.4c2.1-1.6 3.2-1.3 3.2-1.3.6 1.5.2 2.6.1 2.9.8.8 1.3 1.9 1.3 3.3 0 4.6-2.8 5.5-5.5 5.8.5.4.8 1.1.8 2.3v3.4c0 .4.3.8.8.6 4.8-1.5 8.2-6 8.2-11.3 0-6.6-5.4-12-12-12z" />
+              </svg>
+              <span
+                class="absolute bottom-full left-1/2 transform -translate-x-1/2 p-2 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                GitHub
+              </span>
+            </a>
+          </h3>
+          <p class="text-gray-500 text-sm mb-2">2021-09-20</p>
+          <p class="text-gray-700 mb-4">Java application that displays row reduction steps with LaTeX integration.</p>
+
+
+          <div class="mt-auto flex flex-wrap gap-2 pt-4">
+            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Java</span>
+            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">JavaFX</span>
+            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">UI</span>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg flex flex-col p-6">
+          <h3 class="text-xl font-semibold mb-2 inline-flex align-centerg gap-2">XKNK-Automatisation
+            <a href="https://github.com/nicolaefilat/XKNK-Automatisation" target="_blank" rel="noopener noreferrer"
+              class="relative group text-blue-500 hover:text-blue-700 inline-flex justify-center items-center">
+              <!-- GitHub icon from Font Awesome or custom SVG -->
+              <svg class="w-5 h-5 inline" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path
+                  d="M12 .3c-6.6 0-12 5.4-12 12 0 5.3 3.4 9.8 8.2 11.3.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.5-4-1.5-.5-1.2-1.3-1.6-1.3-1.6-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.3 1.8 1.3 1.1 1.9 3 .6 3.7.5.1-.8.4-1.4.7-1.7-2.6-.3-5.4-1.3-5.4-5.8 0-1.3.5-2.5 1.3-3.3-.1-.3-.5-1.4.1-2.9 0 0 1-.3 3.2 1.3 1-.3 2.1-.4 3.2-.4s2.2.1 3.2.4c2.1-1.6 3.2-1.3 3.2-1.3.6 1.5.2 2.6.1 2.9.8.8 1.3 1.9 1.3 3.3 0 4.6-2.8 5.5-5.5 5.8.5.4.8 1.1.8 2.3v3.4c0 .4.3.8.8.6 4.8-1.5 8.2-6 8.2-11.3 0-6.6-5.4-12-12-12z" />
+              </svg>
+              <span
+                class="absolute bottom-full left-1/2 transform -translate-x-1/2 p-2 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                GitHub
+              </span>
+            </a>
+          </h3>
+          <p class="text-gray-500 text-sm mb-2">2021-07-16</p>
+          <p class="text-gray-700 mb-4">Python automation scripts for various tasks.</p>
+
+
+          <div class="mt-auto flex flex-wrap gap-2 pt-4">
+            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Python</span>
+            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Automation</span>
+          </div>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg flex flex-col p-6">
+          <h3 class="text-xl font-semibold mb-2 inline-flex align-centerg gap-2">Space Invaders in Assembly
+            <a href="https://photos.google.com/share/AF1QipP62oKHpP53dQcQ9cWUJGQQ12fGLwyfKQxp4iuO4s6nAnFrEGwWsQSqAEOcc2Ra-A?key&#x3D;bklxZzNkRFNMOUVaTlJtaEJYZDN1MFRSdWFMWHBn" target="_blank" rel="noopener noreferrer"
+              class="relative group text-blue-500 hover:text-blue-700 inline-flex justify-center items-center">
+              <img src="https://cdn-icons-png.flaticon.com/512/2504/2504965.png" class="w-5 h-5 inline">
+              <span
+                class="absolute bottom-full left-1/2 transform -translate-x-1/2 p-2 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                Demo
+              </span>
+            </a>
+          </h3>
+          <p class="text-gray-500 text-sm mb-2">2021-10-01</p>
+          <p class="text-gray-700 mb-4">A space invaders game written entirely in x86 assembly. This was a bonus project in a team for my Computer Architecture class.</p>
+
+
+          <div class="mt-auto flex flex-wrap gap-2 pt-4">
+            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Python</span>
+            <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Automation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-gray-200 py-20">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-semibold text-center mb-10">Skills</h2>
+      <div class="flex flex-wrap justify-center gap-4">
+        <span class="bg-white text-gray-800 font-semibold px-4 py-2 rounded-full shadow">JavaScript</span>
+        <span class="bg-white text-gray-800 font-semibold px-4 py-2 rounded-full shadow">Python</span>
+        <span class="bg-white text-gray-800 font-semibold px-4 py-2 rounded-full shadow">React</span>
+        <span class="bg-white text-gray-800 font-semibold px-4 py-2 rounded-full shadow">CSS</span>
+        <!-- Add more skills as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-semibold mb-10">Contact Me</h2>
+      <p class="text-gray-700 mb-6">I'm always open to discussing new projects and ideas. Reach out to me!</p>
+      <a href="mailto:your-email@example.com" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full">
+        Send an Email
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6">
+    <div class="container mx-auto px-6 text-center">
+      <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
