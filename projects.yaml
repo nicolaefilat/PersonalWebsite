@@ -1,6 +1,6 @@
 projects:
   - title: "AI-Covid-19"
-    date: "2020-07-19"  # approximate date, replace as needed
+    date: "2020-07-19"  
     github_url: "https://github.com/nicolaefilat/AI-Covid-19"
     description: "A Covid-19 simulation game where players infect as many people as possible."
     tags: ["C#", "Game Development", "AI", "3D"]
@@ -38,64 +38,64 @@ projects:
 
 programming_languages:
   - name: "JavaScript"
-    icon: "https://img.icons8.com/color/50/000000/javascript.png"  # Yellow
-  - name: "Python"
-    icon: "https://img.icons8.com/color/50/000000/python.png"  # Blue
-  - name: "C"
-    icon: "https://img.icons8.com/color/50/000000/c.png"  # Red
-  - name: "C++"
-    icon: "https://img.icons8.com/color/50/000000/c-plus-plus.png"  # Blue
-  - name: "PHP"
-    icon: "https://img.icons8.com/color/50/000000/php.png"  # Purple
-  - name: "Go"
-    icon: "https://img.icons8.com/color/50/000000/go.png"  # Blue
-  - name: "Rust"
-    icon: "https://img.icons8.com/color/50/000000/rust.png"  # Orange
+    icon: "https://img.icons8.com/color/50/000000/javascript.png"  
   - name: "TypeScript"
-    icon: "https://img.icons8.com/color/50/000000/typescript.png"  # Blue
+    icon: "https://img.icons8.com/color/50/000000/typescript.png"  
+  - name: "Python"
+    icon: "https://img.icons8.com/color/50/000000/python.png"  
+  - name: "C"
+    icon: "https://img.icons8.com/color/50/000000/c.png"  
+  - name: "C++"
+    icon: "https://img.icons8.com/color/50/000000/c-plus-plus.png"  
+  - name: "PHP"
+    icon: "https://img.icons8.com/color/50/000000/php.png"  
+  - name: "Go"
+    icon: "https://img.icons8.com/color/50/000000/go.png"  
+  - name: "Rust"
+    icon: "https://img.icons8.com/color/50/000000/rust.png"  
   - name: "SQL"
-    icon: "https://img.icons8.com/color/50/000000/sql.png"  # Blue
+    icon: "https://img.icons8.com/color/50/000000/sql.png"  
   - name: "Shell"
-    icon: "https://img.icons8.com/color/50/000000/console.png"  # Green
+    icon: "https://img.icons8.com/color/50/000000/console.png"  
   - name: "Scala"
-    icon: "https://img.icons8.com/?size=100&id=blmYmhls_jS7&format=png&color=000000"  # Red
+    icon: "https://img.icons8.com/?size=100&id=blmYmhls_jS7&format=png&color=000000"  
 
 frontend_frameworks:
   - name: "Vue"
-    icon: "https://img.icons8.com/color/50/000000/vue-js.png"  # Green
+    icon: "https://img.icons8.com/color/50/000000/vue-js.png"  
   - name: "React"
-    icon: "https://img.icons8.com/color/50/000000/react-native.png"  # Blue
+    icon: "https://img.icons8.com/color/50/000000/react-native.png"  
   - name: "Tailwind CSS"
-    icon: "https://img.icons8.com/color/50/000000/tailwindcss.png"  # Blue
+    icon: "https://img.icons8.com/color/50/000000/tailwindcss.png"  
   - name: "Quasar"
-    icon: "https://cdn.quasar.dev/logo-v2/svg/logo.svg"  # Blue
+    icon: "https://cdn.quasar.dev/logo-v2/svg/logo.svg"  
 
 backend_frameworks:
   - name: "ASP.NET"
-    icon: "https://img.icons8.com/?size=100&id=1BC75jFEBED6&format=png&color=000000"  # Blue
+    icon: "https://img.icons8.com/?size=100&id=1BC75jFEBED6&format=png&color=000000"  
   - name: "Spring"
-    icon: "https://img.icons8.com/color/50/000000/spring-logo.png"  # Green
+    icon: "https://img.icons8.com/color/50/000000/spring-logo.png"  
   - name: "Node.js"
-    icon: "https://img.icons8.com/color/50/000000/nodejs.png"  # Green
+    icon: "https://img.icons8.com/color/50/000000/nodejs.png"  
   - name: "Go"
-    icon: "https://img.icons8.com/color/50/000000/go.png"  # Blue
+    icon: "https://img.icons8.com/color/50/000000/go.png"  
   - name: "Laravel"
-    icon: "https://duckduckgo.com/i/0669f4ea8f69b7f3.png"  # Red
+    icon: "https://duckduckgo.com/i/0669f4ea8f69b7f3.png"  
     size: "7"
   - name: "MongoDB"
-    icon: "https://img.icons8.com/color/50/000000/mongodb.png"  # Green
+    icon: "https://img.icons8.com/color/50/000000/mongodb.png"  
   - name: "MySQL"
-    icon: "https://img.icons8.com/color/50/000000/mysql-logo.png"  # Blue
+    icon: "https://img.icons8.com/color/50/000000/mysql-logo.png"  
   - name: "PostgreSQL"
-    icon: "https://img.icons8.com/?size=100&id=38561&format=png&color=000000"  # Blue
+    icon: "https://img.icons8.com/?size=100&id=38561&format=png&color=000000"  
 
 ci_cd_tools:
   - name: "Jenkins"
-    icon: "https://img.icons8.com/?size=100&id=39292&format=png&color=000000"  # Blue
+    icon: "https://img.icons8.com/?size=100&id=39292&format=png&color=000000"  
   - name: "Docker"
-    icon: "https://img.icons8.com/color/50/000000/docker.png"  # Green
+    icon: "https://img.icons8.com/color/50/000000/docker.png"  
   - name: "Ansible"
-    icon: "https://img.icons8.com/color/50/000000/ansible.png"  # Green
+    icon: "https://img.icons8.com/color/50/000000/ansible.png"  
 
 
 
@@ -148,7 +148,7 @@ work_experience:
     position: "Internship programme"
     duration: "July 2022 - Aug 2022"
     responsibilities:
-      - "Parsing XML files using the C# language"
+      - "Parsing XML files using the C#"
       - "Fixing failing unit tests for military software used by NATO"
       - "Write geometry tests using geodesic math"
   - company: "Visionary Cities Romania"
