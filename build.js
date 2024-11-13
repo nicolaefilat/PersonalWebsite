@@ -13,6 +13,9 @@ function build() {
         const templateContent = fs.readFileSync("template.html", "utf8");
         const template = Handlebars.compile(templateContent);
 
+        const listSectionPartial = fs.readFileSync("section.hbs", "utf8");
+        Handlebars.registerPartial('skill_section', listSectionPartial);
+
         // Generate HTML by injecting data into the template
         const outputHtml = template(projectsData);
 

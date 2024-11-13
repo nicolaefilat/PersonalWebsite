@@ -14,9 +14,9 @@
     <div class="container mx-auto px-6 flex justify-between items-center">
       <h1 class="text-3xl font-bold">My Portfolio</h1>
       <nav>
-        <a href="#projects" class="text-gray-300 hover:text-white px-4">Projects</a>
-        <a href="#skills" class="text-gray-300 hover:text-white px-4">Skills</a>
-        <a href="#contact" class="text-gray-300 hover:text-white px-4">Contact</a>
+        <a href="#projects" class="text-gray-200 hover:text-white px-4">Projects</a>
+        <a href="#skills" class="text-gray-200 hover:text-white px-4">Skills</a>
+        <a href="#contact" class="text-gray-200 hover:text-white px-4">Contact</a>
       </nav>
     </div>
   </header>
@@ -25,9 +25,9 @@
   <section class="bg-gray-900 text-white py-20">
     <div class="container mx-auto px-6 text-center">
       <h2 class="text-4xl font-semibold mb-4">Welcome to My Portfolio</h2>
-      <p class="text-gray-400 mb-8">Showcasing my projects, skills, and experiences in web development.</p>
+      <p class="text-gray-400 mb-8">Showcasing my projects, skills, and experiences.</p>
       <a href="#projects" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full">
-        View My Work
+        View My Projects
       </a>
     </div>
   </section>
@@ -134,58 +134,10 @@
   <section id="skills" class="bg-gray-200 py-20">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
-        <!-- Programming Languages Column -->
-        <div class="space-y-4">
-          <h2 class="text-2xl font-semibold">Programming Languages</h2>
-          <ul class="grid grid-cols-1 md:grid-cols-2  gap-6">
-            {{#each programming_languages}}
-            <li class="inline-flex items-center gap-1">
-              <img src="{{this.icon}}" alt="{{this.name}} icon" class="w-8 h-8">
-              <span>{{this.name}}</span>
-            </li>
-            {{/each}}
-          </ul>
-        </div>
-
-        <!-- Frontend Column -->
-        <div class="space-y-4">
-          <h2 class="text-2xl font-medium">Frontend</h2>
-          <ul class="grid grid-cols-2 gap-6">
-            {{#each frontend_frameworks}}
-            <li class="flex items-center space-x-2">
-              <img src="{{this.icon}}" alt="{{this.name}} icon" class="w-8 h-8">
-              <span class="text-lg">{{this.name}}</span>
-            </li>
-            {{/each}}
-          </ul>
-        </div>
-
-        <!-- Backend Frameworks -->
-        <div class="space-y-4">
-          <h2 class="text-xl font-medium">Backend</h2>
-          <ul class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {{#each backend_frameworks}}
-            <li class="flex items-center space-x-2">
-              <img src="{{this.icon}}" alt="{{this.name}} icon"
-                class="{{#if size}} w-{{size}} h-{{size}} {{else}} w-8 h-8 {{/if}}"> <span
-                class="text-lg">{{this.name}}</span>
-            </li>
-            {{/each}}
-          </ul>
-        </div>
-
-        <div class="space-y-4">
-          <h2 class="text-xl font-medium">CI/CD</h2>
-          <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {{#each ci_cd_tools}}
-            <li class="flex items-center space-x-2">
-              <img src="{{this.icon}}" alt="{{this.name}} icon"
-                class="{{#if size}} w-{{size}} h-{{size}} {{else}} w-8 h-8 {{/if}}"> <span
-                class="text-lg">{{this.name}}</span>
-            </li>
-            {{/each}}
-          </ul>
-        </div>
+        {{> skill_section title="Languages" items=programming_languages extraGridClass="" }}
+        {{> skill_section title="Frontend" items=frontend_frameworks extraGridClass="" }}
+        {{> skill_section title="Backend" items=backend_frameworks extraGridClass="" }}
+        {{> skill_section title="CI/CD" items=ci_cd_tools extraGridClass="lg:grid-cols-3" }}
       </div>
     </div>
     </div>
