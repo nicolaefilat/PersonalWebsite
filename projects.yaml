@@ -1,18 +1,18 @@
 education:
-  - degree: "National High School"
-    institution: "Tudor Vianu"
-    start_time: "Sep 2017"
-    end_time : "July 2021"
-    description: "Main Subjects: Informatics (Intensive), Mathematics, Physics, Chemistry"
-    icon: "https://img.icons8.com/color/50/000000/school.png" 
+  - degree: "Masters in Machine Learning"
+    institution: "KTH Royal Institute of Technology"
+    start_time: "Sep 2024"
+    end_time : "present"
+    description: "Subjects covered so far: Introduction to Machine Learning and Artificial Intelligence"
+    icon: "https://img.icons8.com/?size=100&id=WDI63NQbh3cO&format=png&color=000000"
 
-  - degree: "Bachelor in Computer Science and Engineering"
-    institution: "Technische Universiteit Delft"
-    start_time: "Sep 2021"
-    end_time : "July 2024"
-    description: "Main Subjects: Software Project, Machine Learning, Algorithms & Data Structures, Computability Theory, Databases, Web Development"
-    icon: "https://img.icons8.com/color/50/000000/graduation-cap.png" 
-  
+  - degree: "Exchange"
+    institution: "KTH Royal Institute of Technology"
+    start_time: "Sep 2023"
+    end_time : "Jan 2024"
+    description: "Subjects: Ethical Hacking, Cybersecurity Overview, Compiler Construction and Execution Environments, and Distributed Artificial Intelligence and Intelligent Agents."
+    icon: "https://img.icons8.com/color/50/000000/graduation-cap.png"
+
   - degree: "Honours Degree"
     institution: "Technische Universiteit Delft"
     start_time: "Sep 2022"
@@ -20,23 +20,37 @@ education:
     description: "I did research in the field of program synthesis algorithms. The project aimed to find ways to generate programs that satisfy input/output examples. I have contributed to the Herb program synthesis framework."
     link: "https://herb-ai.github.io/"
     link_name: "Herb"
-    icon: "https://img.icons8.com/color/50/000000/graduation-cap.png" 
+    icon: "https://img.icons8.com/color/50/000000/graduation-cap.png"
 
-  - degree: "Exchange"
-    institution: "KTH Royal Institute of Technology"
-    start_time: "Sep 2023"
-    end_time : "Jan 2024"
-    description: "Subjects: Ethical Hacking, Cybersecurity Overview,  Compiler Construction and Execution Environments and  Distributed Artificial Intelligence and Intelligent Agents."
-    icon: "https://img.icons8.com/color/50/000000/graduation-cap.png" 
+  - degree: "Bachelor in Computer Science and Engineering"
+    institution: "Technische Universiteit Delft"
+    start_time: "Sep 2021"
+    end_time : "July 2024"
+    description: "Main Subjects: Software Project, Machine Learning, Algorithms & Data Structures, Computability Theory, Databases, Web Development"
+    icon: "https://img.icons8.com/color/50/000000/graduation-cap.png"
 
-  - degree: "Masters in Machine Learning"
-    institution: "KTH Royal Institute of Technology"
-    start_time: "Sep 2024"
-    end_time : "present"
-    description: "Subjects covered so far: Introduction to Machine Learning and Artificial Intelligence"
-    icon: "https://img.icons8.com/?size=100&id=WDI63NQbh3cO&format=png&color=000000" 
+  - degree: "National High School"
+    institution: "Tudor Vianu"
+    start_time: "Sep 2017"
+    end_time : "July 2021"
+    description: "Main Subjects: Informatics (Intensive), Mathematics, Physics, Chemistry"
+    icon: "https://img.icons8.com/color/50/000000/school.png"
 
 work_experience:
+  - company: "Nexis Africa"
+    position: "Remote Software Engineer Intern"
+    duration: "Sep 2024 - Nov 2024"
+    responsibilities:
+      - "Develop a web app for managing water payment subscription"
+      - "Contribute to the Vue frontend and the Go backend"
+      - "Setup Jenkins CI/CD using Docker and Ansible for the project"
+      - "Build a whatsapp customer chatbot using Whatsapp API"
+  - company: "Visionary Cities Romania"
+    position: "Freelancer for Institute"
+    duration: "Sep 2022 - July 2024"
+    responsibilities:
+      - "Develop an API in Python to get get statistics data from various web sources with the aim to create a city index that measures the attractiveness of the Romanian cities"
+      - "The data was scraped or was taken using an API key from tripadvisors, google maps, google reviews, Romanian National Institute of Statistics, etc"
   - company: "TU Delft"
     position: "Teacher Assistant"
     duration: "Sep 2022 - July 2023"
@@ -56,21 +70,6 @@ work_experience:
     responsibilities:
       - "Implement a web application that allows employees to give 360 feedback to each other"
       - "Developed in a team of 5 students"
-
-  - company: "Visionary Cities Romania"
-    position: "Freelancer for Institute"
-    duration: "Sep 2022 - July 2024"
-    responsibilities:
-      - "Develop an API in Python to get get statistics data from various web sources with the aim to create a city index that measures the attractiveness of the Romanian cities"
-      - "The data was scraped or was taken using an API key from tripadvisors, google maps, google reviews, Romanian National Institute of Statistics, etc"
-  - company: "Nexis Africa"
-    position: "Remote Software Engineer Intern"
-    duration: "Sep 2024 - Nov 2024"
-    responsibilities:
-      - "Develop a web app for managing water payment subscription"
-      - "Contribute to the Vue frontend and the Go backend"
-      - "Setup Jenkins CI/CD using Docker and Ansible for the project"
-      - "Build a whatsapp customer chatbot using Whatsapp API"
 
 # Movies app 
 # Math web app
@@ -100,58 +99,6 @@ work_experience:
 # Calendar App (React native)
 # Julia Honours HPC setup
 projects: 
-  - project_group: "Projects" 
-    list:
-    - title: "Log Viewer"
-      data: "2023-01-01"
-      description: |
-        A <em>Flask</em> based web application with a frontend that features two interactive buttons. When a button is clicked, an event is sent to the backend, 
-        which randomly responds with either success or failure. This response, along with the button clicked, should be logged in a UI element on the frontend (a <em>log viewer</em>).
-        Importantly, this log is persisted between user sessions.
-        <br/> <br/>
-        In this project I focused on making a clean interface with a dark mode toggle and with a responsive design that works well on any device.
-      github_url: "https://github.com/nicolaefilat/LogViewer"
-      tags: ["TailWind CSS", "React", "Flask"]
-
-    - title: "AI-Covid-19"
-      date: "2020-07-19"  
-      github_url: "https://github.com/nicolaefilat/AI-Covid-19"
-      description: "A Covid-19 simulation game where players infect as many people as possible."
-      tags: ["C#", "Game Development", "AI", "3D"]
-
-    - title: "Movies-Script-Helper"
-      date: "2021-02-15"
-      github_url: "https://github.com/nicolaefilat/Movies-Script-Helper"
-      description: "Python scripts for subtitle management and directory organization."
-      tags: ["Python", "Automation"]
-
-    - title: "Quasar-Todo-App"
-      date: "2022-06-10"
-      github_url: "https://github.com/nicolaefilat/Quasar-Todo-App"
-      description: "A cross-platform to-do app built with Quasar and Vue."
-      tags: ["Vue", "Quasar", "Cross-Platform Development"]
-
-    - title: "RowReductionJavaFX"
-      date: "2021-09-20"
-      github_url: "https://github.com/nicolaefilat/RowReductionJavaFX"
-      description: "Java application that displays row reduction steps with LaTeX integration."
-      tags: ["Java", "JavaFX", "Latex", "Linear Algebra"]
-
-    - title: "XKNK-Automatisation"
-      date: "2021-07-16"
-      github_url: "https://github.com/nicolaefilat/XKNK-Automatisation"
-      description: "Python automation scripts for various tasks."
-      tags: ["Python", "Automation"]
-
-    - title: "Movies search App" 
-      date: "2021-02-15" 
-      description: | 
-        Web app that shows movies from <a class="link" href="https://www.themoviedb.org/"> TheMovieDatabase </a> API. The app just shows movie pictures in a nice format and allows for filtering movies based on rating, director and name. The backend was written in Django. 
-        <br/> <br/> This was my <b>first</b> project where I have tried to make a UI that actually looks good. I have used Figma to prototype the design and them implemented it in CSS + HTML. In order to have a nicer scroll bar I have implemented one from scratch using vanilla javascript.
-
-      video_url: "https://vimeo.com/535587752"
-      tags: ["Django", "Figma", "API"]
-
   - project_group: "University Projects"
     list:
     - title: "Space Invaders in x86 Assembly"
@@ -182,14 +129,87 @@ projects:
       github_url: "https://github.com/petruanica/Connect_4"
       video_url: "https://connect4-rseh.onrender.com/"
       tags: ["JS", "Node", "Figma"]
-    - title: "OOP Project"
-      date: "2022-03-01"
-      description: "Quiz like multiplayer desktop game where players answer sustainability questions. The game was developed in a team of 5 people. We had to use JavaFx and Spring Boot for the backend. To make the game more fun we added a lot of powerups and animations."
-      tags: ["JavaFX", "SpringBoot","Hybernate"]
     - title: "Compiler for a subset of the C language"
       date: "2024-01-01"
-      description: "."
-      tags: ["Scala", "x86","Ocaml","Functional Programming","Parsing"]
+      description: |
+        This project was made as part of a course about Compilers and Execution Environments. The task was to generate assembly code for a given string of c code.
+        I implemented parsing, typechecking, AST to IR and IR to assembly. My compiler was able to support all binary operators, loops and conditionals. 
+        The compiler was implemented in scala using pattern matching and recursion.
+        <br/> <br/> 
+        This is probably the <b>most difficult </b> project I have ever made so far. The code base was around 1000 lines of code of complex complier logic. The performance of the generated 
+        assembly was far from great. For any expression I would save the values on the stack and only if necessary use registers. This meant that a lot of simple would use stack allocation 
+        even though enough registers would be available. Overall it was a very challenging project but very rewarding in the end.  
+      tags: ["Scala", "x86","Functional Programming","Parsing"]
+    - title: "OOP Project"
+      date: "2022-03-01"
+      description: |
+        Quiz like multiplayer desktop game where players answer sustainability questions. The game was developed in a team of 5 people. We had to use JavaFx and Spring Boot for the backend. To make the game more fun we added a lot of powerups and animations.
+      video_url: "https://vimeo.com/1029792995"
+      tags: ["JavaFX", "SpringBoot","Hybernate"]
+
+  - project_group: "Free-time Projects" 
+    list:
+    - title: "Log Viewer"
+      data: "2023-01-01"
+      description: |
+        A <em>Flask</em> based web application with a frontend that features two interactive buttons. When a button is clicked, an event is sent to the backend, 
+        which randomly responds with either success or failure. This response, along with the button clicked, should be logged in a UI element on the frontend (a <em>log viewer</em>).
+        Importantly, this log is persisted between user sessions.
+        <br/> <br/>
+        In this project, I mainly focused on making a clean interface with a dark mode toggle and with a responsive design that works well on any device.
+      github_url: "https://github.com/nicolaefilat/LogViewer"
+      tags: ["TailWind CSS", "React", "Flask"]
+
+
+    - title: "Quasar-Todo-App"
+      date: "2022-06-10"
+      github_url: "https://github.com/nicolaefilat/Quasar-Todo-App"
+      description: | 
+        A cross-platform to-do app built with <a class="link" href="https://quasar.dev/">Quasar</a> and Vue. This was the project in which I have learned how to use the Vue framework which Quasar relies on.
+        The todo-app has quite a nice UI for a "simple" to-do app because I wanted to use this app for my daily planning. <br/> I have developed this app in one week.
+      tags: ["Vue", "Quasar", "Cross-Platform Development"]
+
+    - title: "RowReductionJavaFX"
+      date: "2021-09-20"
+      github_url: "https://github.com/nicolaefilat/RowReductionJavaFX"
+      description: | 
+        JavaFx application that displays row reduction steps with Latex formatting.
+        <br/>
+        I have implemented this small application because I was preparing for the Linear Algebra exam and I wanted to check that I was performing the row reduction steps correctly. 
+      tags: ["Java", "JavaFX", "Latex", "Linear Algebra"]
+
+    - title: "XKNK-Automatisation"
+      date: "2021-07-16"
+      github_url: "https://github.com/nicolaefilat/XKNK-Automatisation"
+      description: |
+        Python automation scripts for managing XKNX electrical systems. 
+        <br/> 
+        In a smart home, a resident might want to reduce the electrical consumption of their appliances by monitoring their energy usage. This project enables users to set usage limits for "groups" 
+        of appliances, and when these limits are exceeded, the highest-consuming appliances are automatically disconnected from the power supply. After some time, the system will try to restart the 
+        turned off appliances if the do no exceed the consumption limit.
+      tags: ["Python", "Automation"]
+
+    - title: "Movies search App" 
+      date: "2021-02-15" 
+      description: | 
+        Web app that shows movies from <a class="link" href="https://www.themoviedb.org/"> TheMovieDatabase </a> API. The app just shows movie pictures in a nice format and allows for filtering movies based on rating, director and name. The backend was written in Django. 
+        <br/> <br/> This was my <b>first</b> project where I have tried to make a UI that actually looks good. I have used Figma to prototype the design and them implemented it in CSS + HTML. In order to have a nicer scroll bar I have implemented one from scratch using vanilla javascript.
+
+      video_url: "https://vimeo.com/535587752"
+      tags: ["Django", "Figma", "API"]
+    
+    - title: "AI-Covid-19"
+      date: "2020-07-19"  
+      github_url: "https://github.com/nicolaefilat/AI-Covid-19"
+      description: "A Covid-19 simulation game where players infect as many people as possible."
+      tags: ["C#", "Game Development", "AI", "3D"]
+
+    - title: "Movies-Script-Helper"
+      date: "2021-02-15"
+      github_url: "https://github.com/nicolaefilat/Movies-Script-Helper"
+      description: "Python scripts for subtitle management and directory organization."
+      tags: ["Python", "Automation"]
+
 
 
   - project_group: "Game development"
@@ -210,15 +230,23 @@ projects:
   
     - title: "VGDC GameJam"
       date: "2021-02-15"
-      description: "2D platformer game developed in Unity for a gamejam over a span of one weekend during university.  This project taught me how to be pragmatic and realistic about what features to impelement given the limited time availability. Even though the time span was short, I managed to implement some game mechanics that I have implemented before. One of such mechanics is that once you jump on the head of the enemy you can control the enemy player in such a way to use him as a block to jump organization. "
+      description: |
+        2D platformer game developed in Unity for a gamejam over a span of one weekend during university.  This project taught me how to be pragmatic and realistic about what features to implement given the limited time availability. 
+        <br/> <br/>
+        Even though the time span was short, 
+        I managed to implement some game mechanics that I have never implemented before. One of such mechanics is that once you jump on the head of the enemy you can control the enemy player to use him to your advantage.
+        <br/> The game is available for download on <a class="link" href="https://p31ikan.itch.io/try-to-speedrun-this">itch.io</a>
       github_url: "https://github.com/piotr-cichon/VGDC-Fall-Game-Jam-2021/"
+      video_url: "https://vimeo.com/648383998"
       tags: ["Unity", "Game Design"]
 
-  
     - title: "Reversed Billiards"
       date: "2023-02-15"
-      description: "2D game developed in Unity for a gamejam with the theme \"Reversed\". I have developed with game together with my brother over one weekend. My brother came up with a nice idea of a game that fits the theme and I have helped him implement the programming side of the Game.
-                    After the game loop was ready I have designed some nice levels with my brother. In the end I would say the game was a success, especially the use of motivating music"
+      description: |
+        2D game developed in Unity for a gamejam with the theme \"Reversed\". I have developed with game together with my brother over one weekend. My brother came up with a nice idea of a game that fits the theme and I have helped him implement the programming side of the Game.
+        After the game loop was ready I have designed some nice levels with my brother. In the end I would say the game was a success, especially the use of motivating music
+        <br/> The game is available for download on <a class="link" href="https://nickk2002.itch.io/reversed-8ball">itch.io</a>
+
       video_url:  "https://nickk2002.itch.io/reversed-8ball"
       tags: ["Unity", "Game Design"]
 
