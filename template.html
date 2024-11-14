@@ -5,7 +5,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nicolae Filat</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .link {
+      position: relative;
+      display: inline-block;
+      padding-right: 18px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1e40af;
+      transition: color 0.3s ease;
+    }
+
+    .link::after {
+      content: '\f0c1';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.8rem;
+      color: #3b82f6;
+      transition: color 0.3s ease;
+    }
+
+    .link:hover {
+      color: #2563eb;
+    }
+
+    .link:hover::after {
+      color: #2563eb;
+    }
+  </style>
+  </style>
 </head>
 
 <body class="bg-gray-100 text-gray-900 dark">
@@ -33,48 +67,50 @@
         <a href="#projects" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full">
           Projects
         </a>
-        <a href="#skills" class="bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded-full">
+        <a href="#skills" class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-6 rounded-full">
           Skills
+        </a>
+        <a href="#contact" class="bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded-full">
+          Contact
         </a>
       </div>
 
     </section>
   </div>
 
-  <div id="education" class="py-10">
-    <div
-      class="container mx-auto grid max-w-8xl grid-cols-1 md:grid-cols-2 gap-8 bg-gray-100 justify-center items-stretch">
+  <div class="py-10">
+    <div id="education"
+      class="container mx-auto grid max-w-6xl grid-cols-1 md:grid-cols-2 gap-8 bg-gray-100 justify-center items-stretch">
       <section>
-        <h2 class="text-3xl font-semibold font-bold text-gray-800 mb-6">
-          <!-- <img src="https://cdn-icons-png.flaticon.com/512/2924/2924814.png" alt="About Me" class="w-8 h-8 mt-1"> -->
+        <h2 class="text-3xl font-semibold font-bold text-gray-800 mb-6 inline-flex items-center gap-1">
+          <img src="https://cdn-icons-png.flaticon.com/512/3976/3976625.png" class="w-8 h-8 inline">
           Education
         </h2>
         <ul class="space-y-6">
           {{#each education}}
-          <li class="bg-white p-6 shadow-md rounded-lg">
+          <li class="bg-white p-6 sm:p-4 shadow-md rounded-lg">
             <h3 class="text-lg font-semibold text-gray-800 inline-flex items-start gap-1">
               <img src="{{icon}}" alt="{{institution}}" class="w-5 h-5 mt-0.5">
-              <span> {{institution}} </br>
-                <span class="text-md">
-                  {{degree}}
-                </span>
+              <span> {{institution}} - {{degree}}
               </span>
             </h3>
             <p class="text-sm text-gray-500">{{start_time}} - {{ end_time }}</p>
-            <p class="mt-2 text-gray-700">{{ description }}
+            <p class="mt-2 text-gray-700"> {{{ description }}}
               {{#if link}}
               <a href="{{link}}" target="_blank" rel="noopener noreferrer">
                 <span class="text-blue-500  hover:text-blue-700">({{link_name}})</span>
               </a>
               {{/if}}
             </p>
-
           </li>
           {{/each}}
         </ul>
       </section>
       <section>
-        <h2 class="text-3xl font-semibold text-gray-800 mb-6">Work Experience</h2>
+        <h2 class="text-3xl font-semibold font-bold text-gray-800 mb-6 inline-flex items-center gap-1">
+          <img src="https://cdn-icons-png.flaticon.com/512/3281/3281289.png" class="w-8 h-8 inline">
+          Work Experience
+        </h2>
         <ul class="space-y-6">
           {{#each work_experience}}
           <li class="bg-white p-6 shadow-md rounded-lg">
@@ -126,8 +162,7 @@
               {{/if}}
             </h3>
             <p class="text-gray-500 text-sm mb-2">{{date}}</p>
-            <p class="text-gray-700 mb-4">{{description}}</p>
-
+            <p class="text-gray-700 mb-4">{{{ description }}}</p>
 
             <div class="mt-auto flex flex-wrap gap-2 pt-4">
               {{#each tags}}
@@ -158,13 +193,36 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-20">
-    <div class="container mx-auto px-6 text-center">
+  <section id="contact" class="py-8">
+    <div class="mx-auto px-6 text-center">
       <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
       <p class="text-gray-700 mb-6">I'm always open to discussing new projects and ideas. Reach out to me!</p>
-      <a href="mailto:nicolae.filat@gmail.com" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full">
-        Send an Email
-      </a>
+      <div class="max-w-md mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+          <div class="flex items-center space-x-4">
+            <i class="fab fa-github text-2xl text-gray-800"></i>
+            <a href="https://github.com/nicolaefilat" class="text-xl text-gray-700 hover:text-blue-500">GitHub</a>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <i class="fab fa-linkedin text-2xl text-blue-700"></i>
+            <a href="https://www.linkedin.com/in/filat-nicolae-799843222"
+              class="text-xl text-gray-700 hover:text-blue-500">LinkedIn</a>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <i class="fas fa-phone-alt text-2xl text-gray-800"></i>
+            <a href="tel:+1234567890" class="text-xl text-gray-700 hover:text-blue-500">+40728491626</a>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <i class="fas fa-envelope text-2xl text-gray-800"></i>
+            <a href="mailto:username@example.com"
+              class="text-xl text-gray-700 hover:text-blue-500">nicolae.filat@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 

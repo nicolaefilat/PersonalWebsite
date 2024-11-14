@@ -1,6 +1,118 @@
+education:
+  - degree: "National High School"
+    institution: "Tudor Vianu"
+    start_time: "Sep 2017"
+    end_time : "July 2021"
+    description: "Main Subjects: Informatics (Intensive), Mathematics, Physics, Chemistry"
+    icon: "https://img.icons8.com/color/50/000000/school.png" 
+
+  - degree: "Bachelor in Computer Science and Engineering"
+    institution: "Technische Universiteit Delft"
+    start_time: "Sep 2021"
+    end_time : "July 2024"
+    description: "Main Subjects: Software Project, Machine Learning, Algorithms & Data Structures, Computability Theory, Databases, Web Development"
+    icon: "https://img.icons8.com/color/50/000000/graduation-cap.png" 
+  
+  - degree: "Honours Degree"
+    institution: "Technische Universiteit Delft"
+    start_time: "Sep 2022"
+    end_time : "Aug 2024"
+    description: "I did research in the field of program synthesis algorithms. The project aimed to find ways to generate programs that satisfy input/output examples. I have contributed to the Herb program synthesis framework."
+    link: "https://herb-ai.github.io/"
+    link_name: "Herb"
+    icon: "https://img.icons8.com/color/50/000000/graduation-cap.png" 
+
+  - degree: "Exchange"
+    institution: "KTH Royal Institute of Technology"
+    start_time: "Sep 2023"
+    end_time : "Jan 2024"
+    description: "Subjects: Ethical Hacking, Cybersecurity Overview,  Compiler Construction and Execution Environments and  Distributed Artificial Intelligence and Intelligent Agents."
+    icon: "https://img.icons8.com/color/50/000000/graduation-cap.png" 
+
+  - degree: "Masters in Machine Learning"
+    institution: "KTH Royal Institute of Technology"
+    start_time: "Sep 2024"
+    end_time : "present"
+    description: "Subjects covered so far: Introduction to Machine Learning and Artificial Intelligence"
+    icon: "https://img.icons8.com/?size=100&id=WDI63NQbh3cO&format=png&color=000000" 
+
+work_experience:
+  - company: "TU Delft"
+    position: "Teacher Assistant"
+    duration: "Sep 2022 - July 2023"
+    responsibilities:
+      - "Help with answering student’s questions during the lab and grade assignments or exams"
+      - "TA for Reasoning and Logic, OOP in Java, Computer Organization, Web & Database Technology, Information & Data Management"
+  - company: "Interactive Software Romania"
+    position: "Internship programme"
+    duration: "July 2022 - Aug 2022"
+    responsibilities:
+      - "Parsing XML files using the C#"
+      - "Fixing failing unit tests for military software used by NATO"
+      - "Write geometry tests using geodesic math"
+  - company: "Tjip The Platform Engineer"
+    position: "Internship"
+    duration: "July 2022 - Aug 2022"
+    responsibilities:
+      - "Implement a web application that allows employees to give 360 feedback to each other"
+      - "Developed in a team of 5 students"
+
+  - company: "Visionary Cities Romania"
+    position: "Freelancer for Institute"
+    duration: "Sep 2022 - July 2024"
+    responsibilities:
+      - "Develop an API in Python to get get statistics data from various web sources with the aim to create a city index that measures the attractiveness of the Romanian cities"
+      - "The data was scraped or was taken using an API key from tripadvisors, google maps, google reviews, Romanian National Institute of Statistics, etc"
+  - company: "Nexis Africa"
+    position: "Remote Software Engineer Intern"
+    duration: "Sep 2024 - Nov 2024"
+    responsibilities:
+      - "Develop a web app for managing water payment subscription"
+      - "Contribute to the Vue frontend and the Go backend"
+      - "Setup Jenkins CI/CD using Docker and Ansible for the project"
+      - "Build a whatsapp customer chatbot using Whatsapp API"
+
+# Movies app 
+# Math web app
+# Particle simulator covid 19
+# Covid 19 game youtube
+# C++ SFML chess unfinished project
+# SEM Project
+# TJIP Project 
+# Robot Project
+# Scratch game 
+# Gamecelerator game (really bad game)
+
+# Piano
+
+# Codeforces + Hackerrank + IOI + Google Code Jam
+
+# CTS
+# Reversing 
+# Bug Bounty attempts
+
+# Game Jams
+# - 2D Platformer
+# - Wolf Game (Unreal)
+# - Mailman strikes again
+# - Reversed Pool
+
+# Calendar App (React native)
+# Julia Honours HPC setup
 projects: 
   - project_group: "Projects" 
     list:
+    - title: "Log Viewer"
+      data: "2023-01-01"
+      description: |
+        A <em>Flask</em> based web application with a frontend that features two interactive buttons. When a button is clicked, an event is sent to the backend, 
+        which randomly responds with either success or failure. This response, along with the button clicked, should be logged in a UI element on the frontend (a <em>log viewer</em>).
+        Importantly, this log is persisted between user sessions.
+        <br/> <br/>
+        In this project I focused on making a clean interface with a dark mode toggle and with a responsive design that works well on any device.
+      github_url: "https://github.com/nicolaefilat/LogViewer"
+      tags: ["TailWind CSS", "React", "Flask"]
+
     - title: "AI-Covid-19"
       date: "2020-07-19"  
       github_url: "https://github.com/nicolaefilat/AI-Covid-19"
@@ -33,20 +145,41 @@ projects:
 
     - title: "Movies search App" 
       date: "2021-02-15" 
-      description: "Web app that shows movies from TheMovieDatabase API. The app just shows movie pictures in a nice format and allows for filtering movies based on rating, director and name. The backend was written in Django. This was my first project
-                    where I have tried to make a UI that actually looks good. I have used Figma to prototype the design and them implemented it in CSS + HTML. In order to have a nicer scroll bar I have implemented one from scratch using vanilla javascript."
+      description: | 
+        Web app that shows movies from <a class="link" href="https://www.themoviedb.org/"> TheMovieDatabase </a> API. The app just shows movie pictures in a nice format and allows for filtering movies based on rating, director and name. The backend was written in Django. 
+        <br/> <br/> This was my <b>first</b> project where I have tried to make a UI that actually looks good. I have used Figma to prototype the design and them implemented it in CSS + HTML. In order to have a nicer scroll bar I have implemented one from scratch using vanilla javascript.
+
+      video_url: "https://vimeo.com/535587752"
       tags: ["Django", "Figma", "API"]
 
   - project_group: "University Projects"
     list:
     - title: "Space Invaders in x86 Assembly"
       date: "2021-10-01"
-      description: "A space invaders game written entirely in x86 assembly. This was a bonus project in a team for my Computer Architecture class."
+      description: |
+        A space invaders game written entirely in x86 assembly. This was a bonus project in a team for my Computer Architecture class. We only had access to basic functions to implement 
+        the game: prints something on the screen and a timer to control the fps. Because the project was done a group of 3 people, the teachers required us to add "extra" features like sound effects.
+        <br/> <br/>
+        Adding sound in x86 Assembly was <b>not</b> easy. I have improvised a melody on the piano and they used the frequencies of the notes to play some basic sound track.
+        <br/> <br/>
+        We had a lot of low level bugs that were difficult to debug but we have managed to complete the project on time. In this project, I learned the importance of persistence, as there were many times 
+        when I felt like giving up due to challenging low-level bugs that were difficult to debug
       video_url: "https://photos.google.com/share/AF1QipP62oKHpP53dQcQ9cWUJGQQ12fGLwyfKQxp4iuO4s6nAnFrEGwWsQSqAEOcc2Ra-A?key=bklxZzNkRFNMOUVaTlJtaEJYZDN1MFRSdWFMWHBn"
       tags: ["x86", "Team Project", "Low Level"]
+   
     - title: "Connect 4"
       date: "2022-01-31"
-      description: "A multiplayer connect4 game in browser using web sockets and node. Vanilla JS was used because it was a requirement from the university. The game was developed in a team with another colleague. The UI was first prototyped in Figma and then we implemented it in css using grid and flexbox."
+      description: |
+        A multiplayer connect4 game in browser using web sockets and node. Vanilla JS was used because it was a requirement from the university. 
+        The game was developed in a team with another colleague. 
+        <br/> <br/>
+        The UI was first prototyped in Figma and then we implemented it in css using grid and flexbox. The websocket logic was the most difficult part of the project. 
+        Because we were not using any JS framework we had to use low level socket browser APIs to send and receive messages. 
+        <br/> <br/>
+        You can try out the game in the browser as it is available on the Internet <a class="link" href="https://connect4-rseh.onrender.com">here </a>
+        (The page might take one minute to load for the first time because I am using a free deployment service). You can open two 
+        browser tabs and play with yourself if you do not have someone else to play with.
+      github_url: "https://github.com/petruanica/Connect_4"
       video_url: "https://connect4-rseh.onrender.com/"
       tags: ["JS", "Node", "Figma"]
     - title: "OOP Project"
@@ -90,33 +223,6 @@ projects:
       tags: ["Unity", "Game Design"]
 
 
-# Movies app 
-# Math web app
-# Particle simulator covid 19
-# Covid 19 game youtube
-# C++ SFML chess unfinished project
-# SEM Project
-# TJIP Project 
-# Robot Project
-# Scratch game 
-# Gamecelerator game (really bad game)
-
-# Piano
-
-# Codeforces + Hackerrank + IOI + Google Code Jam
-
-# CTS
-# Reversing 
-# Bug Bounty attempts
-
-# Game Jams
-# - 2D Platformer
-# - Wolf Game (Unreal)
-# - Mailman strikes again
-# - Reversed Pool
-
-# Calendar App (React native)
-# Julia Honours HPC setup
 programming_languages:
   - name: "JavaScript"
     icon: "https://img.icons8.com/color/50/000000/javascript.png"  
@@ -133,7 +239,7 @@ programming_languages:
   - name: "Go"
     icon: "https://img.icons8.com/color/50/000000/go.png"  
   - name: "Rust"
-    icon: "https://img.icons8.com/color/50/000000/rust.png"  
+    icon: "https://www.rust-lang.org/static/images/rust-logo-blk.svg"  
   - name: "SQL"
     icon: "https://img.icons8.com/color/50/000000/sql.png"  
   - name: "Shell"
@@ -164,6 +270,8 @@ backend_frameworks:
     icon: "https://img.icons8.com/color/50/000000/nodejs.png"  
   - name: "Django"
     icon: "https://img.icons8.com/?size=100&id=XPdRFanRZtNK&format=png&color=000000"  
+  - name: "Flask"
+    icon: "https://img.icons8.com/?size=100&id=MHcMYTljfKOr&format=png"  
   - name: "Go"
     icon: "https://img.icons8.com/color/50/000000/go.png"  
   - name: "Laravel"
@@ -183,72 +291,3 @@ ci_cd_tools:
     icon: "https://img.icons8.com/color/50/000000/docker.png"  
   - name: "Ansible"
     icon: "https://img.icons8.com/color/50/000000/ansible.png"  
-
-
-
-education:
-  - degree: "National High School"
-    institution: "Tudor Vianu"
-    start_time: "Sep 2017"
-    end_time : "July 2021"
-    description: "Main Subjects: Informatics (Intensive), Mathematics, Physics, Chemistry"
-    icon: "https://img.icons8.com/color/50/000000/school.png" 
-
-  - degree: "Bachelor in Computer Science and Engineering"
-    institution: "Technische Universiteit Delft"
-    start_time: "Sep 2021"
-    end_time : "July 2024"
-    description: "Main Subjects: Software Project, Machine Learning, Algorithms & Data Structures, Computability Theory, Databases, Web Development"
-    icon: "https://img.icons8.com/color/50/000000/graduation-cap.png" 
-  
-  - degree: "Honours Degree"
-    institution: "Technische Universiteit Delft"
-    start_time: "Sep 2022"
-    end_time : "Aug 2024"
-    description: "I did research in the field of program synthesis algorithms. The project aimed to find ways to generate programs that satisfy input/output examples. I have contributed to the Herb research project written in Julia."
-    link: "https://herb-ai.github.io/"
-    link_name: "Herb"
-    icon: "https://img.icons8.com/color/50/000000/graduation-cap.png" 
-
-  - degree: "Exchange"
-    institution: "KTH Royal Institute of Technology"
-    start_time: "Sep 2023"
-    end_time : "Jan 2024"
-    description: "Subjects: Ethical Hacking, Cybersecurity Overview,  Compiler Construction and Execution Environments and  Distributed Artificial Intelligence and Intelligent Agents."
-    icon: "https://img.icons8.com/color/50/000000/graduation-cap.png" 
-
-  - degree: "Masters in Machine Learning"
-    institution: "KTH Royal Institute of Technology"
-    start_time: "Sep 2024"
-    end_time : "present"
-    description: "Subjects covered so far: Introduction to Machine Learning and Artificial Intelligence"
-    icon: "https://img.icons8.com/?size=100&id=WDI63NQbh3cO&format=png&color=000000" 
-
-work_experience:
-  - company: "TU Delft"
-    position: "Teacher Assistant"
-    duration: "Sep 2022 - July 2023"
-    responsibilities:
-      - "Help with answering student’s questions during the lab and grade assignments or exams"
-      - "TA for Reasoning and Logic, OOP in Java, Computer Organization, Web & Database Technology, Information & Data Management"
-  - company: "Interactive Software Romania"
-    position: "Internship programme"
-    duration: "July 2022 - Aug 2022"
-    responsibilities:
-      - "Parsing XML files using the C#"
-      - "Fixing failing unit tests for military software used by NATO"
-      - "Write geometry tests using geodesic math"
-  - company: "Visionary Cities Romania"
-    position: "Freelancer for Institute"
-    duration: "Sep 2022 - July 2024"
-    responsibilities:
-      - "Develop an API in Python to get get statistics data from various web sources with the aim to create a city index that measures the attractiveness of the Romanian cities"
-      - "The data was scraped or was taken using an API key from tripadvisors, google maps, google reviews, Romanian National Institute of Statistics, etc"
-  - company: "Nexis Africa"
-    position: "Remote Software Engineer Intern"
-    duration: "Sep 2024 - Nov 2024"
-    responsibilities:
-      - "Develop a web app for managing water payment subscription"
-      - "Contribute to the Vue frontend and the Go backend"
-      - "Setup Jenkins CI/CD using Docker and Ansible for the project"
-      - "Build a whatsapp customer chatbot using Whatsapp API"

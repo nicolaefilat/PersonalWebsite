@@ -5,7 +5,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nicolae Filat</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .link {
+      position: relative;
+      display: inline-block;
+      padding-right: 18px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1e40af;
+      transition: color 0.3s ease;
+    }
+
+    .link::after {
+      content: '\f0c1';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.8rem;
+      color: #3b82f6;
+      transition: color 0.3s ease;
+    }
+
+    .link:hover {
+      color: #2563eb;
+    }
+
+    .link:hover::after {
+      color: #2563eb;
+    }
+  </style>
+  </style>
 </head>
 
 <body class="bg-gray-100 text-gray-900 dark">
@@ -33,100 +67,86 @@
         <a href="#projects" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full">
           Projects
         </a>
-        <a href="#skills" class="bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded-full">
+        <a href="#skills" class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-6 rounded-full">
           Skills
+        </a>
+        <a href="#contact" class="bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded-full">
+          Contact
         </a>
       </div>
 
     </section>
   </div>
 
-  <div id="education" class="py-10">
-    <div
-      class="container mx-auto grid max-w-8xl grid-cols-1 md:grid-cols-2 gap-8 bg-gray-100 justify-center items-stretch">
+  <div class="py-10">
+    <div id="education"
+      class="container mx-auto grid max-w-6xl grid-cols-1 md:grid-cols-2 gap-8 bg-gray-100 justify-center items-stretch">
       <section>
-        <h2 class="text-3xl font-semibold font-bold text-gray-800 mb-6">
-          <!-- <img src="https://cdn-icons-png.flaticon.com/512/2924/2924814.png" alt="About Me" class="w-8 h-8 mt-1"> -->
+        <h2 class="text-3xl font-semibold font-bold text-gray-800 mb-6 inline-flex items-center gap-1">
+          <img src="https://cdn-icons-png.flaticon.com/512/3976/3976625.png" class="w-8 h-8 inline">
           Education
         </h2>
         <ul class="space-y-6">
-          <li class="bg-white p-6 shadow-md rounded-lg">
+          <li class="bg-white p-6 sm:p-4 shadow-md rounded-lg">
             <h3 class="text-lg font-semibold text-gray-800 inline-flex items-start gap-1">
               <img src="https://img.icons8.com/color/50/000000/school.png" alt="Tudor Vianu" class="w-5 h-5 mt-0.5">
-              <span> Tudor Vianu </br>
-                <span class="text-md">
-                  National High School
-                </span>
+              <span> Tudor Vianu - National High School
               </span>
             </h3>
             <p class="text-sm text-gray-500">Sep 2017 - July 2021</p>
-            <p class="mt-2 text-gray-700">Main Subjects: Informatics (Intensive), Mathematics, Physics, Chemistry
+            <p class="mt-2 text-gray-700"> Main Subjects: Informatics (Intensive), Mathematics, Physics, Chemistry
             </p>
-
           </li>
-          <li class="bg-white p-6 shadow-md rounded-lg">
+          <li class="bg-white p-6 sm:p-4 shadow-md rounded-lg">
             <h3 class="text-lg font-semibold text-gray-800 inline-flex items-start gap-1">
               <img src="https://img.icons8.com/color/50/000000/graduation-cap.png" alt="Technische Universiteit Delft" class="w-5 h-5 mt-0.5">
-              <span> Technische Universiteit Delft </br>
-                <span class="text-md">
-                  Bachelor in Computer Science and Engineering
-                </span>
+              <span> Technische Universiteit Delft - Bachelor in Computer Science and Engineering
               </span>
             </h3>
             <p class="text-sm text-gray-500">Sep 2021 - July 2024</p>
-            <p class="mt-2 text-gray-700">Main Subjects: Software Project, Machine Learning, Algorithms &amp; Data Structures, Computability Theory, Databases, Web Development
+            <p class="mt-2 text-gray-700"> Main Subjects: Software Project, Machine Learning, Algorithms & Data Structures, Computability Theory, Databases, Web Development
             </p>
-
           </li>
-          <li class="bg-white p-6 shadow-md rounded-lg">
+          <li class="bg-white p-6 sm:p-4 shadow-md rounded-lg">
             <h3 class="text-lg font-semibold text-gray-800 inline-flex items-start gap-1">
               <img src="https://img.icons8.com/color/50/000000/graduation-cap.png" alt="Technische Universiteit Delft" class="w-5 h-5 mt-0.5">
-              <span> Technische Universiteit Delft </br>
-                <span class="text-md">
-                  Honours Degree
-                </span>
+              <span> Technische Universiteit Delft - Honours Degree
               </span>
             </h3>
             <p class="text-sm text-gray-500">Sep 2022 - Aug 2024</p>
-            <p class="mt-2 text-gray-700">I did research in the field of program synthesis algorithms. The project aimed to find ways to generate programs that satisfy input/output examples. I have contributed to the Herb research project written in Julia.
+            <p class="mt-2 text-gray-700"> I did research in the field of program synthesis algorithms. The project aimed to find ways to generate programs that satisfy input/output examples. I have contributed to the Herb program synthesis framework.
               <a href="https://herb-ai.github.io/" target="_blank" rel="noopener noreferrer">
                 <span class="text-blue-500  hover:text-blue-700">(Herb)</span>
               </a>
             </p>
-
           </li>
-          <li class="bg-white p-6 shadow-md rounded-lg">
+          <li class="bg-white p-6 sm:p-4 shadow-md rounded-lg">
             <h3 class="text-lg font-semibold text-gray-800 inline-flex items-start gap-1">
               <img src="https://img.icons8.com/color/50/000000/graduation-cap.png" alt="KTH Royal Institute of Technology" class="w-5 h-5 mt-0.5">
-              <span> KTH Royal Institute of Technology </br>
-                <span class="text-md">
-                  Exchange
-                </span>
+              <span> KTH Royal Institute of Technology - Exchange
               </span>
             </h3>
             <p class="text-sm text-gray-500">Sep 2023 - Jan 2024</p>
-            <p class="mt-2 text-gray-700">Subjects: Ethical Hacking, Cybersecurity Overview,  Compiler Construction and Execution Environments and  Distributed Artificial Intelligence and Intelligent Agents.
+            <p class="mt-2 text-gray-700"> Subjects: Ethical Hacking, Cybersecurity Overview,  Compiler Construction and Execution Environments and  Distributed Artificial Intelligence and Intelligent Agents.
             </p>
-
           </li>
-          <li class="bg-white p-6 shadow-md rounded-lg">
+          <li class="bg-white p-6 sm:p-4 shadow-md rounded-lg">
             <h3 class="text-lg font-semibold text-gray-800 inline-flex items-start gap-1">
               <img src="https://img.icons8.com/?size&#x3D;100&amp;id&#x3D;WDI63NQbh3cO&amp;format&#x3D;png&amp;color&#x3D;000000" alt="KTH Royal Institute of Technology" class="w-5 h-5 mt-0.5">
-              <span> KTH Royal Institute of Technology </br>
-                <span class="text-md">
-                  Masters in Machine Learning
-                </span>
+              <span> KTH Royal Institute of Technology - Masters in Machine Learning
               </span>
             </h3>
             <p class="text-sm text-gray-500">Sep 2024 - present</p>
-            <p class="mt-2 text-gray-700">Subjects covered so far: Introduction to Machine Learning and Artificial Intelligence
+            <p class="mt-2 text-gray-700"> Subjects covered so far: Introduction to Machine Learning and Artificial Intelligence
             </p>
-
           </li>
         </ul>
       </section>
       <section>
-        <h2 class="text-3xl font-semibold text-gray-800 mb-6">Work Experience</h2>
+        <h2 class="text-3xl font-semibold font-bold text-gray-800 mb-6 inline-flex items-center gap-1">
+          <img src="https://cdn-icons-png.flaticon.com/512/3281/3281289.png" class="w-8 h-8 inline">
+          Work Experience
+        </h2>
         <ul class="space-y-6">
           <li class="bg-white p-6 shadow-md rounded-lg">
             <h3 class="text-lg font-semibold text-gray-800">Teacher Assistant at TU Delft</h3>
@@ -143,6 +163,14 @@
               - Parsing XML files using the C#<br>
               - Fixing failing unit tests for military software used by NATO<br>
               - Write geometry tests using geodesic math<br>
+            </p>
+          </li>
+          <li class="bg-white p-6 shadow-md rounded-lg">
+            <h3 class="text-lg font-semibold text-gray-800">Internship at Tjip The Platform Engineer</h3>
+            <p class="text-sm text-gray-500">July 2022 - Aug 2022</p>
+            <p class="mt-2 text-gray-700">
+              - Implement a web application that allows employees to give 360 feedback to each other<br>
+              - Developed in a team of 5 students<br>
             </p>
           </li>
           <li class="bg-white p-6 shadow-md rounded-lg">
@@ -173,6 +201,35 @@
         <h2 class="text-3xl font-semibold text-center mb-10">Projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           <div class="bg-white shadow-lg rounded-lg flex flex-col p-6">
+            <h3 class="text-xl font-semibold mb-2 inline-flex align-centerg gap-2">Log Viewer
+              <a href="https://github.com/nicolaefilat/LogViewer" target="_blank" rel="noopener noreferrer"
+                class="relative group text-blue-500 hover:text-blue-700 inline-flex justify-center items-center">
+                <!-- GitHub icon from Font Awesome or custom SVG -->
+                <svg class="w-5 h-5 inline" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .3c-6.6 0-12 5.4-12 12 0 5.3 3.4 9.8 8.2 11.3.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.5-4-1.5-.5-1.2-1.3-1.6-1.3-1.6-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.3 1.8 1.3 1.1 1.9 3 .6 3.7.5.1-.8.4-1.4.7-1.7-2.6-.3-5.4-1.3-5.4-5.8 0-1.3.5-2.5 1.3-3.3-.1-.3-.5-1.4.1-2.9 0 0 1-.3 3.2 1.3 1-.3 2.1-.4 3.2-.4s2.2.1 3.2.4c2.1-1.6 3.2-1.3 3.2-1.3.6 1.5.2 2.6.1 2.9.8.8 1.3 1.9 1.3 3.3 0 4.6-2.8 5.5-5.5 5.8.5.4.8 1.1.8 2.3v3.4c0 .4.3.8.8.6 4.8-1.5 8.2-6 8.2-11.3 0-6.6-5.4-12-12-12z" />
+                </svg>
+                <span
+                  class="absolute bottom-full left-1/2 transform -translate-x-1/2 p-2 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                  GitHub
+                </span>
+              </a>
+            </h3>
+            <p class="text-gray-500 text-sm mb-2"></p>
+            <p class="text-gray-700 mb-4">A <em>Flask</em> based web application with a frontend that features two interactive buttons. When a button is clicked, an event is sent to the backend, 
+which randomly responds with either success or failure. This response, along with the button clicked, should be logged in a UI element on the frontend (a <em>log viewer</em>).
+Importantly, this log is persisted between user sessions.
+<br/> <br/>
+In this project I focused on making a clean interface with a dark mode toggle and with a responsive design that works well on any device.
+</p>
+
+            <div class="mt-auto flex flex-wrap gap-2 pt-4">
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">TailWind CSS</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">React</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Flask</span>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg flex flex-col p-6">
             <h3 class="text-xl font-semibold mb-2 inline-flex align-centerg gap-2">AI-Covid-19
               <a href="https://github.com/nicolaefilat/AI-Covid-19" target="_blank" rel="noopener noreferrer"
                 class="relative group text-blue-500 hover:text-blue-700 inline-flex justify-center items-center">
@@ -189,7 +246,6 @@
             </h3>
             <p class="text-gray-500 text-sm mb-2">2020-07-19</p>
             <p class="text-gray-700 mb-4">A Covid-19 simulation game where players infect as many people as possible.</p>
-
 
             <div class="mt-auto flex flex-wrap gap-2 pt-4">
               <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">C#</span>
@@ -216,7 +272,6 @@
             <p class="text-gray-500 text-sm mb-2">2021-02-15</p>
             <p class="text-gray-700 mb-4">Python scripts for subtitle management and directory organization.</p>
 
-
             <div class="mt-auto flex flex-wrap gap-2 pt-4">
               <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Python</span>
               <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Automation</span>
@@ -239,7 +294,6 @@
             </h3>
             <p class="text-gray-500 text-sm mb-2">2022-06-10</p>
             <p class="text-gray-700 mb-4">A cross-platform to-do app built with Quasar and Vue.</p>
-
 
             <div class="mt-auto flex flex-wrap gap-2 pt-4">
               <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Vue</span>
@@ -264,7 +318,6 @@
             </h3>
             <p class="text-gray-500 text-sm mb-2">2021-09-20</p>
             <p class="text-gray-700 mb-4">Java application that displays row reduction steps with LaTeX integration.</p>
-
 
             <div class="mt-auto flex flex-wrap gap-2 pt-4">
               <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Java</span>
@@ -291,7 +344,6 @@
             <p class="text-gray-500 text-sm mb-2">2021-07-16</p>
             <p class="text-gray-700 mb-4">Python automation scripts for various tasks.</p>
 
-
             <div class="mt-auto flex flex-wrap gap-2 pt-4">
               <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Python</span>
               <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Automation</span>
@@ -299,10 +351,19 @@
           </div>
           <div class="bg-white shadow-lg rounded-lg flex flex-col p-6">
             <h3 class="text-xl font-semibold mb-2 inline-flex align-centerg gap-2">Movies search App
+              <a href="https://vimeo.com/535587752" target="_blank" rel="noopener noreferrer"
+                class="relative group text-blue-500 hover:text-blue-700 inline-flex justify-center items-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/2504/2504965.png" class="w-5 h-5 inline">
+                <span
+                  class="absolute bottom-full left-1/2 transform -translate-x-1/2 p-2 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                  Demo
+                </span>
+              </a>
             </h3>
             <p class="text-gray-500 text-sm mb-2">2021-02-15</p>
-            <p class="text-gray-700 mb-4">Web app that shows movies from TheMovieDatabase API. The app just shows movie pictures in a nice format and allows for filtering movies based on rating, director and name. The backend was written in Django. This was my first project where I have tried to make a UI that actually looks good. I have used Figma to prototype the design and them implemented it in CSS + HTML. In order to have a nicer scroll bar I have implemented one from scratch using vanilla javascript.</p>
-
+            <p class="text-gray-700 mb-4">Web app that shows movies from <a class="link" href="https://www.themoviedb.org/"> TheMovieDatabase </a> API. The app just shows movie pictures in a nice format and allows for filtering movies based on rating, director and name. The backend was written in Django. 
+<br/> <br/> This was my <b>first</b> project where I have tried to make a UI that actually looks good. I have used Figma to prototype the design and them implemented it in CSS + HTML. In order to have a nicer scroll bar I have implemented one from scratch using vanilla javascript.
+</p>
 
             <div class="mt-auto flex flex-wrap gap-2 pt-4">
               <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Django</span>
@@ -327,8 +388,14 @@
               </a>
             </h3>
             <p class="text-gray-500 text-sm mb-2">2021-10-01</p>
-            <p class="text-gray-700 mb-4">A space invaders game written entirely in x86 assembly. This was a bonus project in a team for my Computer Architecture class.</p>
-
+            <p class="text-gray-700 mb-4">A space invaders game written entirely in x86 assembly. This was a bonus project in a team for my Computer Architecture class. We only had access to basic functions to implement 
+the game: prints something on the screen and a timer to control the fps. Because the project was done a group of 3 people, the teachers required us to add "extra" features like sound effects.
+<br/> <br/>
+Adding sound in x86 Assembly was <b>not</b> easy. I have improvised a melody on the piano and they used the frequencies of the notes to play some basic sound track.
+<br/> <br/>
+We had a lot of low level bugs that were difficult to debug but we have managed to complete the project on time. In this project, I learned the importance of persistence, as there were many times 
+when I felt like giving up due to challenging low-level bugs that were difficult to debug
+</p>
 
             <div class="mt-auto flex flex-wrap gap-2 pt-4">
               <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">x86</span>
@@ -338,6 +405,18 @@
           </div>
           <div class="bg-white shadow-lg rounded-lg flex flex-col p-6">
             <h3 class="text-xl font-semibold mb-2 inline-flex align-centerg gap-2">Connect 4
+              <a href="https://github.com/petruanica/Connect_4" target="_blank" rel="noopener noreferrer"
+                class="relative group text-blue-500 hover:text-blue-700 inline-flex justify-center items-center">
+                <!-- GitHub icon from Font Awesome or custom SVG -->
+                <svg class="w-5 h-5 inline" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .3c-6.6 0-12 5.4-12 12 0 5.3 3.4 9.8 8.2 11.3.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.5-4-1.5-.5-1.2-1.3-1.6-1.3-1.6-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.3 1.8 1.3 1.1 1.9 3 .6 3.7.5.1-.8.4-1.4.7-1.7-2.6-.3-5.4-1.3-5.4-5.8 0-1.3.5-2.5 1.3-3.3-.1-.3-.5-1.4.1-2.9 0 0 1-.3 3.2 1.3 1-.3 2.1-.4 3.2-.4s2.2.1 3.2.4c2.1-1.6 3.2-1.3 3.2-1.3.6 1.5.2 2.6.1 2.9.8.8 1.3 1.9 1.3 3.3 0 4.6-2.8 5.5-5.5 5.8.5.4.8 1.1.8 2.3v3.4c0 .4.3.8.8.6 4.8-1.5 8.2-6 8.2-11.3 0-6.6-5.4-12-12-12z" />
+                </svg>
+                <span
+                  class="absolute bottom-full left-1/2 transform -translate-x-1/2 p-2 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                  GitHub
+                </span>
+              </a>
               <a href="https://connect4-rseh.onrender.com/" target="_blank" rel="noopener noreferrer"
                 class="relative group text-blue-500 hover:text-blue-700 inline-flex justify-center items-center">
                 <img src="https://cdn-icons-png.flaticon.com/512/2504/2504965.png" class="w-5 h-5 inline">
@@ -348,8 +427,16 @@
               </a>
             </h3>
             <p class="text-gray-500 text-sm mb-2">2022-01-31</p>
-            <p class="text-gray-700 mb-4">A multiplayer connect4 game in browser using web sockets and node. Vanilla JS was used because it was a requirement from the university. The game was developed in a team with another colleague. The UI was first prototyped in Figma and then we implemented it in css using grid and flexbox.</p>
-
+            <p class="text-gray-700 mb-4">A multiplayer connect4 game in browser using web sockets and node. Vanilla JS was used because it was a requirement from the university. 
+The game was developed in a team with another colleague. 
+<br/> <br/>
+The UI was first prototyped in Figma and then we implemented it in css using grid and flexbox. The websocket logic was the most difficult part of the project. 
+Because we were not using any JS framework we had to use low level socket browser APIs to send and receive messages. 
+<br/> <br/>
+You can try out the game in the browser as it is available on the Internet <a class="link" href="https://connect4-rseh.onrender.com">here </a>
+(The page might take one minute to load for the first time because I am using a free deployment service). You can open two 
+browser tabs and play with yourself if you do not have someone else to play with.
+</p>
 
             <div class="mt-auto flex flex-wrap gap-2 pt-4">
               <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">JS</span>
@@ -363,7 +450,6 @@
             <p class="text-gray-500 text-sm mb-2">2022-03-01</p>
             <p class="text-gray-700 mb-4">Quiz like multiplayer desktop game where players answer sustainability questions. The game was developed in a team of 5 people. We had to use JavaFx and Spring Boot for the backend. To make the game more fun we added a lot of powerups and animations.</p>
 
-
             <div class="mt-auto flex flex-wrap gap-2 pt-4">
               <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">JavaFX</span>
               <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">SpringBoot</span>
@@ -375,7 +461,6 @@
             </h3>
             <p class="text-gray-500 text-sm mb-2">2024-01-01</p>
             <p class="text-gray-700 mb-4">.</p>
-
 
             <div class="mt-auto flex flex-wrap gap-2 pt-4">
               <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Scala</span>
@@ -402,8 +487,7 @@
               </a>
             </h3>
             <p class="text-gray-500 text-sm mb-2">2019-03-01</p>
-            <p class="text-gray-700 mb-4">3D game developed in Unity for a gamejam with the theme &quot;UnexpectedGame&quot;.Because I did not have a team I have joined a team on discord with people that I did not know. I worked with two students from USA and someone else from UK. Because we the gamejam spanned two weeks we had a lot of time to try and prototype many different ideas. Unfortunately, we were too optimistic about our skills and we had to modify the initial idea of the game to something that we could implement in the given time. The idea we implemented is that the player is a mailman that has to deliver mail to the right boxes. The player can throw the mail to deliver it to the matching mail box. To make the game more challenging we added a timer for each level. In higher levels, boxes drop from the &quot;sky&quot; that block you from throwing the mail. We have added more crazy ideas such as dynamite for destroying the boxes. You can see the game submission at the url on top.  During this experience I have learned how to communicate in a team and how to be clear about my expectations from the other team members. Unfortunately, half way through the project, one team member was disappointed by the fact that we limit the scope of the game too much and decided to leave the team. However, we handled the situation correctly and we continued the project without any hard feelings. I have also learned how to structure the code better and it was my first project on Github where I would have another contributor apart from myself (haha). It was this project that taught me how to solve merge conflicts, create branches and work with git in a more proficient way. </p>
-
+            <p class="text-gray-700 mb-4">3D game developed in Unity for a gamejam with the theme "UnexpectedGame".Because I did not have a team I have joined a team on discord with people that I did not know. I worked with two students from USA and someone else from UK. Because we the gamejam spanned two weeks we had a lot of time to try and prototype many different ideas. Unfortunately, we were too optimistic about our skills and we had to modify the initial idea of the game to something that we could implement in the given time. The idea we implemented is that the player is a mailman that has to deliver mail to the right boxes. The player can throw the mail to deliver it to the matching mail box. To make the game more challenging we added a timer for each level. In higher levels, boxes drop from the "sky" that block you from throwing the mail. We have added more crazy ideas such as dynamite for destroying the boxes. You can see the game submission at the url on top.  During this experience I have learned how to communicate in a team and how to be clear about my expectations from the other team members. Unfortunately, half way through the project, one team member was disappointed by the fact that we limit the scope of the game too much and decided to leave the team. However, we handled the situation correctly and we continued the project without any hard feelings. I have also learned how to structure the code better and it was my first project on Github where I would have another contributor apart from myself (haha). It was this project that taught me how to solve merge conflicts, create branches and work with git in a more proficient way. </p>
 
             <div class="mt-auto flex flex-wrap gap-2 pt-4">
               <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Unity</span>
@@ -430,7 +514,6 @@
             <p class="text-gray-500 text-sm mb-2">2021-02-15</p>
             <p class="text-gray-700 mb-4">2D platformer game developed in Unity for a gamejam over a span of one weekend during university.  This project taught me how to be pragmatic and realistic about what features to impelement given the limited time availability. Even though the time span was short, I managed to implement some game mechanics that I have implemented before. One of such mechanics is that once you jump on the head of the enemy you can control the enemy player in such a way to use him as a block to jump organization. </p>
 
-
             <div class="mt-auto flex flex-wrap gap-2 pt-4">
               <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Unity</span>
               <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Game Design</span>
@@ -448,8 +531,7 @@
               </a>
             </h3>
             <p class="text-gray-500 text-sm mb-2">2023-02-15</p>
-            <p class="text-gray-700 mb-4">2D game developed in Unity for a gamejam with the theme &quot;Reversed&quot;. I have developed with game together with my brother over one weekend. My brother came up with a nice idea of a game that fits the theme and I have helped him implement the programming side of the Game. After the game loop was ready I have designed some nice levels with my brother. In the end I would say the game was a success, especially the use of motivating music</p>
-
+            <p class="text-gray-700 mb-4">2D game developed in Unity for a gamejam with the theme "Reversed". I have developed with game together with my brother over one weekend. My brother came up with a nice idea of a game that fits the theme and I have helped him implement the programming side of the Game. After the game loop was ready I have designed some nice levels with my brother. In the end I would say the game was a success, especially the use of motivating music</p>
 
             <div class="mt-auto flex flex-wrap gap-2 pt-4">
               <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Unity</span>
@@ -498,7 +580,7 @@
                 <span class="text-lg">Go</span>
               </li>
               <li class="flex items-center space-x-1">
-                <img src="https://img.icons8.com/color/50/000000/rust.png" alt="Rust icon" class=" w-8 h-8 ">
+                <img src="https://www.rust-lang.org/static/images/rust-logo-blk.svg" alt="Rust icon" class=" w-8 h-8 ">
                 <span class="text-lg">Rust</span>
               </li>
               <li class="flex items-center space-x-1">
@@ -562,6 +644,10 @@
                 <span class="text-lg">Django</span>
               </li>
               <li class="flex items-center space-x-1">
+                <img src="https://img.icons8.com/?size&#x3D;100&amp;id&#x3D;MHcMYTljfKOr&amp;format&#x3D;png" alt="Flask icon" class=" w-8 h-8 ">
+                <span class="text-lg">Flask</span>
+              </li>
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/color/50/000000/go.png" alt="Go icon" class=" w-8 h-8 ">
                 <span class="text-lg">Go</span>
               </li>
@@ -605,13 +691,36 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="py-20">
-    <div class="container mx-auto px-6 text-center">
+  <section id="contact" class="py-8">
+    <div class="mx-auto px-6 text-center">
       <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
       <p class="text-gray-700 mb-6">I'm always open to discussing new projects and ideas. Reach out to me!</p>
-      <a href="mailto:nicolae.filat@gmail.com" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full">
-        Send an Email
-      </a>
+      <div class="max-w-md mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+          <div class="flex items-center space-x-4">
+            <i class="fab fa-github text-2xl text-gray-800"></i>
+            <a href="https://github.com/nicolaefilat" class="text-xl text-gray-700 hover:text-blue-500">GitHub</a>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <i class="fab fa-linkedin text-2xl text-blue-700"></i>
+            <a href="https://www.linkedin.com/in/filat-nicolae-799843222"
+              class="text-xl text-gray-700 hover:text-blue-500">LinkedIn</a>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <i class="fas fa-phone-alt text-2xl text-gray-800"></i>
+            <a href="tel:+1234567890" class="text-xl text-gray-700 hover:text-blue-500">+40728491626</a>
+          </div>
+
+          <div class="flex items-center space-x-4">
+            <i class="fas fa-envelope text-2xl text-gray-800"></i>
+            <a href="mailto:username@example.com"
+              class="text-xl text-gray-700 hover:text-blue-500">nicolae.filat@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
