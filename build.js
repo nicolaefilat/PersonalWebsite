@@ -20,7 +20,7 @@ function build() {
         const outputHtml = template(projectsData);
 
         // Write the output to a new HTML file
-        fs.writeFileSync("output/index.html", outputHtml);
+        fs.writeFileSync("docs/index.html", outputHtml);
         console.log("index.html has been generated successfully!");
     } catch (error) {
         console.error("Error generating HTML:", error);
