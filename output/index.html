@@ -4,36 +4,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Nicolae Filat</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-100 text-gray-900">
+<body class="bg-gray-100 text-gray-900 dark">
   <!-- Header Section -->
-  <header class="bg-gray-800 text-white py-6">
-    <div class="container mx-auto px-6 flex justify-between items-center">
-      <h1 class="text-3xl font-bold">My Portfolio</h1>
-      <nav>
-        <a href="#projects" class="text-gray-200 hover:text-white px-4">Projects</a>
-        <a href="#skills" class="text-gray-200 hover:text-white px-4">Skills</a>
-        <a href="#contact" class="text-gray-200 hover:text-white px-4">Contact</a>
-      </nav>
-    </div>
-  </header>
+  <div class="flex flex-col">
+    <header class="bg-gray-800 text-white py-6">
+      <div class="container mx-auto px-6 flex justify-between items-center">
+        <h1 class="text-3xl font-bold">Nicolae Filat</h1>
+        <nav class="hidden md:block">
+          <a href="#projects" class="text-gray-200 hover:text-white px-4">Projects</a>
+          <a href="#skills" class="text-gray-200 hover:text-white px-4">Skills</a>
+          <a href="#contact" class="text-gray-200 hover:text-white px-4">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-  <!-- Hero Section -->
-  <section class="bg-gray-900 text-white py-20">
-    <div class="container mx-auto px-6 text-center">
-      <h2 class="text-4xl font-semibold mb-4">Welcome to My Portfolio</h2>
-      <p class="text-gray-400 mb-8">Showcasing my projects, skills, and experiences.</p>
-      <a href="#projects" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full">
-        View My Projects
-      </a>
-    </div>
-  </section>
-  <div>
+    <!-- Hero Section -->
+    <section class="flex flex-col justify-center items-center bg-gray-900 text-white px-6 py-40">
+      <h2 class="text-4xl font-semibold mb-4">Welcome to my website</h2>
+      <p class="text-gray-400 mb-8">Showcasing my projects, skills, and experiences in software development.</p>
+      <div class="inline-flex gap-10" style="gap: 1em;">
+        <a href="#education" class="bg-red-500 hover:bg-red-600 text-white py-2 px-6 rounded-full">
+          Education
+        </a>
+        <a href="#projects" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full">
+          Projects
+        </a>
+        <a href="#skills" class="bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded-full">
+          Skills
+        </a>
+      </div>
+
+    </section>
+  </div>
+
+  <div id="education" class="py-10">
     <div
-      class="container mx-auto grid max-w-8xl grid-cols-1 md:grid-cols-2 gap-8 bg-gray-100 justify-center items-stretch p-8 ">
+      class="container mx-auto grid max-w-8xl grid-cols-1 md:grid-cols-2 gap-8 bg-gray-100 justify-center items-stretch">
       <section>
         <h2 class="text-3xl font-semibold font-bold text-gray-800 mb-6">
           <!-- <img src="https://cdn-icons-png.flaticon.com/512/2924/2924814.png" alt="About Me" class="w-8 h-8 mt-1"> -->
@@ -43,7 +53,11 @@
           <li class="bg-white p-6 shadow-md rounded-lg">
             <h3 class="text-lg font-semibold text-gray-800 inline-flex items-start gap-1">
               <img src="https://img.icons8.com/color/50/000000/school.png" alt="Tudor Vianu" class="w-5 h-5 mt-0.5">
-              Tudor Vianu - National High School, Romania
+              <span> Tudor Vianu </br>
+                <span class="text-md">
+                  National High School
+                </span>
+              </span>
             </h3>
             <p class="text-sm text-gray-500">Sep 2017 - July 2021</p>
             <p class="mt-2 text-gray-700">Main Subjects: Informatics (Intensive), Mathematics, Physics, Chemistry
@@ -53,7 +67,11 @@
           <li class="bg-white p-6 shadow-md rounded-lg">
             <h3 class="text-lg font-semibold text-gray-800 inline-flex items-start gap-1">
               <img src="https://img.icons8.com/color/50/000000/graduation-cap.png" alt="Technische Universiteit Delft" class="w-5 h-5 mt-0.5">
-              Technische Universiteit Delft - Bachelor in Computer Science and Engineering
+              <span> Technische Universiteit Delft </br>
+                <span class="text-md">
+                  Bachelor in Computer Science and Engineering
+                </span>
+              </span>
             </h3>
             <p class="text-sm text-gray-500">Sep 2021 - July 2024</p>
             <p class="mt-2 text-gray-700">Main Subjects: Software Project, Machine Learning, Algorithms &amp; Data Structures, Computability Theory, Databases, Web Development
@@ -63,7 +81,11 @@
           <li class="bg-white p-6 shadow-md rounded-lg">
             <h3 class="text-lg font-semibold text-gray-800 inline-flex items-start gap-1">
               <img src="https://img.icons8.com/color/50/000000/graduation-cap.png" alt="Technische Universiteit Delft" class="w-5 h-5 mt-0.5">
-              Technische Universiteit Delft - Honours Degree
+              <span> Technische Universiteit Delft </br>
+                <span class="text-md">
+                  Honours Degree
+                </span>
+              </span>
             </h3>
             <p class="text-sm text-gray-500">Sep 2022 - Aug 2024</p>
             <p class="mt-2 text-gray-700">I did research in the field of program synthesis algorithms. The project aimed to find ways to generate programs that satisfy input/output examples. I have contributed to the Herb research project written in Julia.
@@ -76,7 +98,11 @@
           <li class="bg-white p-6 shadow-md rounded-lg">
             <h3 class="text-lg font-semibold text-gray-800 inline-flex items-start gap-1">
               <img src="https://img.icons8.com/color/50/000000/graduation-cap.png" alt="KTH Royal Institute of Technology" class="w-5 h-5 mt-0.5">
-              KTH Royal Institute of Technology - Exchange
+              <span> KTH Royal Institute of Technology </br>
+                <span class="text-md">
+                  Exchange
+                </span>
+              </span>
             </h3>
             <p class="text-sm text-gray-500">Sep 2023 - Jan 2024</p>
             <p class="mt-2 text-gray-700">Subjects: Ethical Hacking, Cybersecurity Overview,  Compiler Construction and Execution Environments and  Distributed Artificial Intelligence and Intelligent Agents.
@@ -86,7 +112,11 @@
           <li class="bg-white p-6 shadow-md rounded-lg">
             <h3 class="text-lg font-semibold text-gray-800 inline-flex items-start gap-1">
               <img src="https://img.icons8.com/?size&#x3D;100&amp;id&#x3D;WDI63NQbh3cO&amp;format&#x3D;png&amp;color&#x3D;000000" alt="KTH Royal Institute of Technology" class="w-5 h-5 mt-0.5">
-              KTH Royal Institute of Technology - Masters in Machine Learning
+              <span> KTH Royal Institute of Technology </br>
+                <span class="text-md">
+                  Masters in Machine Learning
+                </span>
+              </span>
             </h3>
             <p class="text-sm text-gray-500">Sep 2024 - present</p>
             <p class="mt-2 text-gray-700">Subjects covered so far: Introduction to Machine Learning and Artificial Intelligence
@@ -135,13 +165,10 @@
           </li>
         </ul>
       </section>
-
     </div>
 
-
-
     <!-- Projects Section -->
-    <section id="projects" class="py-10">
+    <section id="projects" class="py-10 flex flex-col gap-16">
       <div class="container mx-auto px-6">
         <h2 class="text-3xl font-semibold text-center mb-10">Projects</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -242,7 +269,8 @@
             <div class="mt-auto flex flex-wrap gap-2 pt-4">
               <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Java</span>
               <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">JavaFX</span>
-              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">UI</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Latex</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Linear Algebra</span>
             </div>
           </div>
           <div class="bg-white shadow-lg rounded-lg flex flex-col p-6">
@@ -270,7 +298,25 @@
             </div>
           </div>
           <div class="bg-white shadow-lg rounded-lg flex flex-col p-6">
-            <h3 class="text-xl font-semibold mb-2 inline-flex align-centerg gap-2">Space Invaders in Assembly
+            <h3 class="text-xl font-semibold mb-2 inline-flex align-centerg gap-2">Movies search App
+            </h3>
+            <p class="text-gray-500 text-sm mb-2">2021-02-15</p>
+            <p class="text-gray-700 mb-4">Web app that shows movies from TheMovieDatabase API. The app just shows movie pictures in a nice format and allows for filtering movies based on rating, director and name. The backend was written in Django. This was my first project where I have tried to make a UI that actually looks good. I have used Figma to prototype the design and them implemented it in CSS + HTML. In order to have a nicer scroll bar I have implemented one from scratch using vanilla javascript.</p>
+
+
+            <div class="mt-auto flex flex-wrap gap-2 pt-4">
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Django</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Figma</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-semibold text-center mb-10">University Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div class="bg-white shadow-lg rounded-lg flex flex-col p-6">
+            <h3 class="text-xl font-semibold mb-2 inline-flex align-centerg gap-2">Space Invaders in x86 Assembly
               <a href="https://photos.google.com/share/AF1QipP62oKHpP53dQcQ9cWUJGQQ12fGLwyfKQxp4iuO4s6nAnFrEGwWsQSqAEOcc2Ra-A?key&#x3D;bklxZzNkRFNMOUVaTlJtaEJYZDN1MFRSdWFMWHBn" target="_blank" rel="noopener noreferrer"
                 class="relative group text-blue-500 hover:text-blue-700 inline-flex justify-center items-center">
                 <img src="https://cdn-icons-png.flaticon.com/512/2504/2504965.png" class="w-5 h-5 inline">
@@ -285,8 +331,129 @@
 
 
             <div class="mt-auto flex flex-wrap gap-2 pt-4">
-              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Python</span>
-              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Automation</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">x86</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Team Project</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Low Level</span>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg flex flex-col p-6">
+            <h3 class="text-xl font-semibold mb-2 inline-flex align-centerg gap-2">Connect 4
+              <a href="https://connect4-rseh.onrender.com/" target="_blank" rel="noopener noreferrer"
+                class="relative group text-blue-500 hover:text-blue-700 inline-flex justify-center items-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/2504/2504965.png" class="w-5 h-5 inline">
+                <span
+                  class="absolute bottom-full left-1/2 transform -translate-x-1/2 p-2 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                  Demo
+                </span>
+              </a>
+            </h3>
+            <p class="text-gray-500 text-sm mb-2">2022-01-31</p>
+            <p class="text-gray-700 mb-4">A multiplayer connect4 game in browser using web sockets and node. Vanilla JS was used because it was a requirement from the university. The game was developed in a team with another colleague. The UI was first prototyped in Figma and then we implemented it in css using grid and flexbox.</p>
+
+
+            <div class="mt-auto flex flex-wrap gap-2 pt-4">
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">JS</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Node</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Figma</span>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg flex flex-col p-6">
+            <h3 class="text-xl font-semibold mb-2 inline-flex align-centerg gap-2">OOP Project
+            </h3>
+            <p class="text-gray-500 text-sm mb-2">2022-03-01</p>
+            <p class="text-gray-700 mb-4">Quiz like multiplayer desktop game where players answer sustainability questions. The game was developed in a team of 5 people. We had to use JavaFx and Spring Boot for the backend. To make the game more fun we added a lot of powerups and animations.</p>
+
+
+            <div class="mt-auto flex flex-wrap gap-2 pt-4">
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">JavaFX</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">SpringBoot</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Hybernate</span>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg flex flex-col p-6">
+            <h3 class="text-xl font-semibold mb-2 inline-flex align-centerg gap-2">Compiler for a subset of the C language
+            </h3>
+            <p class="text-gray-500 text-sm mb-2">2024-01-01</p>
+            <p class="text-gray-700 mb-4">.</p>
+
+
+            <div class="mt-auto flex flex-wrap gap-2 pt-4">
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Scala</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">x86</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Ocaml</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Functional Programming</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Parsing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-semibold text-center mb-10">Game development</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          <div class="bg-white shadow-lg rounded-lg flex flex-col p-6">
+            <h3 class="text-xl font-semibold mb-2 inline-flex align-centerg gap-2">Mail Man strikes again
+              <a href="https://agyscon.itch.io/the-mail-man-strikes-again" target="_blank" rel="noopener noreferrer"
+                class="relative group text-blue-500 hover:text-blue-700 inline-flex justify-center items-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/2504/2504965.png" class="w-5 h-5 inline">
+                <span
+                  class="absolute bottom-full left-1/2 transform -translate-x-1/2 p-2 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                  Demo
+                </span>
+              </a>
+            </h3>
+            <p class="text-gray-500 text-sm mb-2">2019-03-01</p>
+            <p class="text-gray-700 mb-4">3D game developed in Unity for a gamejam with the theme &quot;UnexpectedGame&quot;.Because I did not have a team I have joined a team on discord with people that I did not know. I worked with two students from USA and someone else from UK. Because we the gamejam spanned two weeks we had a lot of time to try and prototype many different ideas. Unfortunately, we were too optimistic about our skills and we had to modify the initial idea of the game to something that we could implement in the given time. The idea we implemented is that the player is a mailman that has to deliver mail to the right boxes. The player can throw the mail to deliver it to the matching mail box. To make the game more challenging we added a timer for each level. In higher levels, boxes drop from the &quot;sky&quot; that block you from throwing the mail. We have added more crazy ideas such as dynamite for destroying the boxes. You can see the game submission at the url on top.  During this experience I have learned how to communicate in a team and how to be clear about my expectations from the other team members. Unfortunately, half way through the project, one team member was disappointed by the fact that we limit the scope of the game too much and decided to leave the team. However, we handled the situation correctly and we continued the project without any hard feelings. I have also learned how to structure the code better and it was my first project on Github where I would have another contributor apart from myself (haha). It was this project that taught me how to solve merge conflicts, create branches and work with git in a more proficient way. </p>
+
+
+            <div class="mt-auto flex flex-wrap gap-2 pt-4">
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Unity</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Game Design</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Git</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">C#</span>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg flex flex-col p-6">
+            <h3 class="text-xl font-semibold mb-2 inline-flex align-centerg gap-2">VGDC GameJam
+              <a href="https://github.com/piotr-cichon/VGDC-Fall-Game-Jam-2021/" target="_blank" rel="noopener noreferrer"
+                class="relative group text-blue-500 hover:text-blue-700 inline-flex justify-center items-center">
+                <!-- GitHub icon from Font Awesome or custom SVG -->
+                <svg class="w-5 h-5 inline" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .3c-6.6 0-12 5.4-12 12 0 5.3 3.4 9.8 8.2 11.3.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.5-4-1.5-.5-1.2-1.3-1.6-1.3-1.6-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.3 1.8 1.3 1.1 1.9 3 .6 3.7.5.1-.8.4-1.4.7-1.7-2.6-.3-5.4-1.3-5.4-5.8 0-1.3.5-2.5 1.3-3.3-.1-.3-.5-1.4.1-2.9 0 0 1-.3 3.2 1.3 1-.3 2.1-.4 3.2-.4s2.2.1 3.2.4c2.1-1.6 3.2-1.3 3.2-1.3.6 1.5.2 2.6.1 2.9.8.8 1.3 1.9 1.3 3.3 0 4.6-2.8 5.5-5.5 5.8.5.4.8 1.1.8 2.3v3.4c0 .4.3.8.8.6 4.8-1.5 8.2-6 8.2-11.3 0-6.6-5.4-12-12-12z" />
+                </svg>
+                <span
+                  class="absolute bottom-full left-1/2 transform -translate-x-1/2 p-2 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                  GitHub
+                </span>
+              </a>
+            </h3>
+            <p class="text-gray-500 text-sm mb-2">2021-02-15</p>
+            <p class="text-gray-700 mb-4">2D platformer game developed in Unity for a gamejam over a span of one weekend during university.  This project taught me how to be pragmatic and realistic about what features to impelement given the limited time availability. Even though the time span was short, I managed to implement some game mechanics that I have implemented before. One of such mechanics is that once you jump on the head of the enemy you can control the enemy player in such a way to use him as a block to jump organization. </p>
+
+
+            <div class="mt-auto flex flex-wrap gap-2 pt-4">
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Unity</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Game Design</span>
+            </div>
+          </div>
+          <div class="bg-white shadow-lg rounded-lg flex flex-col p-6">
+            <h3 class="text-xl font-semibold mb-2 inline-flex align-centerg gap-2">Reversed Billiards
+              <a href="https://nickk2002.itch.io/reversed-8ball" target="_blank" rel="noopener noreferrer"
+                class="relative group text-blue-500 hover:text-blue-700 inline-flex justify-center items-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/2504/2504965.png" class="w-5 h-5 inline">
+                <span
+                  class="absolute bottom-full left-1/2 transform -translate-x-1/2 p-2 bg-gray-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                  Demo
+                </span>
+              </a>
+            </h3>
+            <p class="text-gray-500 text-sm mb-2">2023-02-15</p>
+            <p class="text-gray-700 mb-4">2D game developed in Unity for a gamejam with the theme &quot;Reversed&quot;. I have developed with game together with my brother over one weekend. My brother came up with a nice idea of a game that fits the theme and I have helped him implement the programming side of the Game. After the game loop was ready I have designed some nice levels with my brother. In the end I would say the game was a success, especially the use of motivating music</p>
+
+
+            <div class="mt-auto flex flex-wrap gap-2 pt-4">
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Unity</span>
+              <span class="bg-gray-200 text-gray-800 px-3 py-1 rounded-full text-sm">Game Design</span>
             </div>
           </div>
         </div>
@@ -296,125 +463,137 @@
 
 
   <!-- Skills Section -->
-  <section id="skills" class="bg-gray-200 py-20">
+  <section id="skills" class="bg-gray-200 py-10">
     <div class="container mx-auto px-6">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
         <div class="space-y-4">
           <h2 class="text-2xl font-medium">Languages</h2>
-          <ul class="grid grid-cols-1 md:grid-cols-2  gap-6">
-              <li class="flex items-center space-x-2">
+          <ul class="grid lg:grid-cols-2 md:grid-cols-1  gap-6">
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/color/50/000000/javascript.png" alt="JavaScript icon" class=" w-8 h-8 ">
                 <span class="text-lg">JavaScript</span>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/color/50/000000/typescript.png" alt="TypeScript icon" class=" w-8 h-8 ">
                 <span class="text-lg">TypeScript</span>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/color/50/000000/python.png" alt="Python icon" class=" w-8 h-8 ">
                 <span class="text-lg">Python</span>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/color/50/000000/c.png" alt="C icon" class=" w-8 h-8 ">
                 <span class="text-lg">C</span>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/color/50/000000/c-plus-plus.png" alt="C++ icon" class=" w-8 h-8 ">
                 <span class="text-lg">C++</span>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/color/50/000000/php.png" alt="PHP icon" class=" w-8 h-8 ">
                 <span class="text-lg">PHP</span>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/color/50/000000/go.png" alt="Go icon" class=" w-8 h-8 ">
                 <span class="text-lg">Go</span>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/color/50/000000/rust.png" alt="Rust icon" class=" w-8 h-8 ">
                 <span class="text-lg">Rust</span>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/color/50/000000/sql.png" alt="SQL icon" class=" w-8 h-8 ">
                 <span class="text-lg">SQL</span>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/color/50/000000/console.png" alt="Shell icon" class=" w-8 h-8 ">
                 <span class="text-lg">Shell</span>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center space-x-1">
+                <img src="https://img.icons8.com/?size&#x3D;100&amp;id&#x3D;Pd2x9GWu9ovX&amp;format&#x3D;png&amp;color&#x3D;000000" alt="Java icon" class=" w-8 h-8 ">
+                <span class="text-lg">Java</span>
+              </li>
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/?size&#x3D;100&amp;id&#x3D;blmYmhls_jS7&amp;format&#x3D;png&amp;color&#x3D;000000" alt="Scala icon" class=" w-8 h-8 ">
                 <span class="text-lg">Scala</span>
+              </li>
+              <li class="flex items-center space-x-1">
+                <img src="https://julialang.org/assets/infra/logo.svg" alt="Julia icon" class=" w-8 h-8 ">
+                <span class="text-lg">Julia</span>
               </li>
           </ul>
         </div>        <div class="space-y-4">
           <h2 class="text-2xl font-medium">Frontend</h2>
-          <ul class="grid grid-cols-1 md:grid-cols-2  gap-6">
-              <li class="flex items-center space-x-2">
+          <ul class="grid lg:grid-cols-2 md:grid-cols-1  gap-6">
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/color/50/000000/vue-js.png" alt="Vue icon" class=" w-8 h-8 ">
                 <span class="text-lg">Vue</span>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/color/50/000000/react-native.png" alt="React icon" class=" w-8 h-8 ">
                 <span class="text-lg">React</span>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/color/50/000000/tailwindcss.png" alt="Tailwind CSS icon" class=" w-8 h-8 ">
                 <span class="text-lg">Tailwind CSS</span>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center space-x-1">
                 <img src="https://cdn.quasar.dev/logo-v2/svg/logo.svg" alt="Quasar icon" class=" w-8 h-8 ">
                 <span class="text-lg">Quasar</span>
               </li>
           </ul>
         </div>        <div class="space-y-4">
           <h2 class="text-2xl font-medium">Backend</h2>
-          <ul class="grid grid-cols-1 md:grid-cols-2  gap-6">
-              <li class="flex items-center space-x-2">
+          <ul class="grid lg:grid-cols-2 md:grid-cols-1  gap-6">
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/?size&#x3D;100&amp;id&#x3D;1BC75jFEBED6&amp;format&#x3D;png&amp;color&#x3D;000000" alt="ASP.NET icon" class=" w-8 h-8 ">
                 <span class="text-lg">ASP.NET</span>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/color/50/000000/spring-logo.png" alt="Spring icon" class=" w-8 h-8 ">
                 <span class="text-lg">Spring</span>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/color/50/000000/nodejs.png" alt="Node.js icon" class=" w-8 h-8 ">
                 <span class="text-lg">Node.js</span>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center space-x-1">
+                <img src="https://img.icons8.com/?size&#x3D;100&amp;id&#x3D;XPdRFanRZtNK&amp;format&#x3D;png&amp;color&#x3D;000000" alt="Django icon" class=" w-8 h-8 ">
+                <span class="text-lg">Django</span>
+              </li>
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/color/50/000000/go.png" alt="Go icon" class=" w-8 h-8 ">
                 <span class="text-lg">Go</span>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center space-x-1">
                 <img src="https://duckduckgo.com/i/0669f4ea8f69b7f3.png" alt="Laravel icon" class=" w-7 h-7 ">
                 <span class="text-lg">Laravel</span>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/color/50/000000/mongodb.png" alt="MongoDB icon" class=" w-8 h-8 ">
                 <span class="text-lg">MongoDB</span>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/color/50/000000/mysql-logo.png" alt="MySQL icon" class=" w-8 h-8 ">
                 <span class="text-lg">MySQL</span>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/?size&#x3D;100&amp;id&#x3D;38561&amp;format&#x3D;png&amp;color&#x3D;000000" alt="PostgreSQL icon" class=" w-8 h-8 ">
                 <span class="text-lg">PostgreSQL</span>
               </li>
           </ul>
         </div>        <div class="space-y-4">
           <h2 class="text-2xl font-medium">CI/CD</h2>
-          <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <li class="flex items-center space-x-2">
+          <ul class="grid lg:grid-cols-2 md:grid-cols-1 lg:grid-cols-3 gap-6">
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/?size&#x3D;100&amp;id&#x3D;39292&amp;format&#x3D;png&amp;color&#x3D;000000" alt="Jenkins icon" class=" w-8 h-8 ">
                 <span class="text-lg">Jenkins</span>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/color/50/000000/docker.png" alt="Docker icon" class=" w-8 h-8 ">
                 <span class="text-lg">Docker</span>
               </li>
-              <li class="flex items-center space-x-2">
+              <li class="flex items-center space-x-1">
                 <img src="https://img.icons8.com/color/50/000000/ansible.png" alt="Ansible icon" class=" w-8 h-8 ">
                 <span class="text-lg">Ansible</span>
               </li>
@@ -428,9 +607,9 @@
   <!-- Contact Section -->
   <section id="contact" class="py-20">
     <div class="container mx-auto px-6 text-center">
-      <h2 class="text-3xl font-semibold mb-10">Contact Me</h2>
+      <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
       <p class="text-gray-700 mb-6">I'm always open to discussing new projects and ideas. Reach out to me!</p>
-      <a href="mailto:your-email@example.com" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full">
+      <a href="mailto:nicolae.filat@gmail.com" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full">
         Send an Email
       </a>
     </div>
@@ -439,7 +618,7 @@
   <!-- Footer -->
   <footer class="bg-gray-800 text-white py-6">
     <div class="container mx-auto px-6 text-center">
-      <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+      <p>&copy; 2023 Nicolae Filat's Portfolio. All rights reserved.</p>
     </div>
   </footer>
 </body>

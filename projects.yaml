@@ -1,41 +1,122 @@
-projects:
-  - title: "AI-Covid-19"
-    date: "2020-07-19"  
-    github_url: "https://github.com/nicolaefilat/AI-Covid-19"
-    description: "A Covid-19 simulation game where players infect as many people as possible."
-    tags: ["C#", "Game Development", "AI", "3D"]
+projects: 
+  - project_group: "Projects" 
+    list:
+    - title: "AI-Covid-19"
+      date: "2020-07-19"  
+      github_url: "https://github.com/nicolaefilat/AI-Covid-19"
+      description: "A Covid-19 simulation game where players infect as many people as possible."
+      tags: ["C#", "Game Development", "AI", "3D"]
 
-  - title: "Movies-Script-Helper"
-    date: "2021-02-15"
-    github_url: "https://github.com/nicolaefilat/Movies-Script-Helper"
-    description: "Python scripts for subtitle management and directory organization."
-    tags: ["Python", "Automation"]
+    - title: "Movies-Script-Helper"
+      date: "2021-02-15"
+      github_url: "https://github.com/nicolaefilat/Movies-Script-Helper"
+      description: "Python scripts for subtitle management and directory organization."
+      tags: ["Python", "Automation"]
 
-  - title: "Quasar-Todo-App"
-    date: "2022-06-10"
-    github_url: "https://github.com/nicolaefilat/Quasar-Todo-App"
-    description: "A cross-platform to-do app built with Quasar and Vue."
-    tags: ["Vue", "Quasar", "Cross-Platform Development"]
+    - title: "Quasar-Todo-App"
+      date: "2022-06-10"
+      github_url: "https://github.com/nicolaefilat/Quasar-Todo-App"
+      description: "A cross-platform to-do app built with Quasar and Vue."
+      tags: ["Vue", "Quasar", "Cross-Platform Development"]
 
-  - title: "RowReductionJavaFX"
-    date: "2021-09-20"
-    github_url: "https://github.com/nicolaefilat/RowReductionJavaFX"
-    description: "Java application that displays row reduction steps with LaTeX integration."
-    tags: ["Java", "JavaFX", "UI"]
+    - title: "RowReductionJavaFX"
+      date: "2021-09-20"
+      github_url: "https://github.com/nicolaefilat/RowReductionJavaFX"
+      description: "Java application that displays row reduction steps with LaTeX integration."
+      tags: ["Java", "JavaFX", "Latex", "Linear Algebra"]
 
-  - title: "XKNK-Automatisation"
-    date: "2021-07-16"
-    github_url: "https://github.com/nicolaefilat/XKNK-Automatisation"
-    description: "Python automation scripts for various tasks."
-    tags: ["Python", "Automation"]
+    - title: "XKNK-Automatisation"
+      date: "2021-07-16"
+      github_url: "https://github.com/nicolaefilat/XKNK-Automatisation"
+      description: "Python automation scripts for various tasks."
+      tags: ["Python", "Automation"]
 
-  - title: "Space Invaders in Assembly"
-    date: "2021-10-01"
-    description: "A space invaders game written entirely in x86 assembly. This was a bonus project in a team for my Computer Architecture class."
-    video_url: "https://photos.google.com/share/AF1QipP62oKHpP53dQcQ9cWUJGQQ12fGLwyfKQxp4iuO4s6nAnFrEGwWsQSqAEOcc2Ra-A?key=bklxZzNkRFNMOUVaTlJtaEJYZDN1MFRSdWFMWHBn"
-    tags: ["Python", "Automation"]
+    - title: "Movies search App" 
+      date: "2021-02-15" 
+      description: "Web app that shows movies from TheMovieDatabase API. The app just shows movie pictures in a nice format and allows for filtering movies based on rating, director and name. The backend was written in Django. This was my first project
+                    where I have tried to make a UI that actually looks good. I have used Figma to prototype the design and them implemented it in CSS + HTML. In order to have a nicer scroll bar I have implemented one from scratch using vanilla javascript."
+      tags: ["Django", "Figma", "API"]
+
+  - project_group: "University Projects"
+    list:
+    - title: "Space Invaders in x86 Assembly"
+      date: "2021-10-01"
+      description: "A space invaders game written entirely in x86 assembly. This was a bonus project in a team for my Computer Architecture class."
+      video_url: "https://photos.google.com/share/AF1QipP62oKHpP53dQcQ9cWUJGQQ12fGLwyfKQxp4iuO4s6nAnFrEGwWsQSqAEOcc2Ra-A?key=bklxZzNkRFNMOUVaTlJtaEJYZDN1MFRSdWFMWHBn"
+      tags: ["x86", "Team Project", "Low Level"]
+    - title: "Connect 4"
+      date: "2022-01-31"
+      description: "A multiplayer connect4 game in browser using web sockets and node. Vanilla JS was used because it was a requirement from the university. The game was developed in a team with another colleague. The UI was first prototyped in Figma and then we implemented it in css using grid and flexbox."
+      video_url: "https://connect4-rseh.onrender.com/"
+      tags: ["JS", "Node", "Figma"]
+    - title: "OOP Project"
+      date: "2022-03-01"
+      description: "Quiz like multiplayer desktop game where players answer sustainability questions. The game was developed in a team of 5 people. We had to use JavaFx and Spring Boot for the backend. To make the game more fun we added a lot of powerups and animations."
+      tags: ["JavaFX", "SpringBoot","Hybernate"]
+    - title: "Compiler for a subset of the C language"
+      date: "2024-01-01"
+      description: "."
+      tags: ["Scala", "x86","Ocaml","Functional Programming","Parsing"]
 
 
+  - project_group: "Game development"
+    list: 
+    - title: "Mail Man strikes again"
+      date: "2019-03-01"
+      description: "3D game developed in Unity for a gamejam with the theme \"UnexpectedGame\".Because I did not have a team I have joined a team on discord with people that I did not know. I worked with two students from USA and someone else from UK.
+                    Because we the gamejam spanned two weeks we had a lot of time to try and prototype many different ideas. Unfortunately, we were too optimistic about our skills and we had to modify the initial idea of the game to something that we could implement in the given time.
+                    The idea we implemented is that the player is a mailman that has to deliver mail to the right boxes. The player can throw the mail to deliver it to the matching mail box. To make the game more challenging we added a timer for each level. In higher levels, boxes drop from the \"sky\" that block you from throwing the mail.
+                    We have added more crazy ideas such as dynamite for destroying the boxes. You can see the game submission at the url on top. 
+                    During this experience I have learned how to communicate in a team and how to be clear about my expectations from the other team members. Unfortunately, half way through the project, one team member was disappointed by the fact that we limit the scope of the game too much and decided to leave the team.
+                    However, we handled the situation correctly and we continued the project without any hard feelings.
+                    I have also learned how to structure the code better and it was my first project on Github where I would have another contributor apart from myself (haha).
+                    It was this project that taught me how to solve merge conflicts, create branches and work with git in a more proficient way.
+                    "
+      video_url:  "https://agyscon.itch.io/the-mail-man-strikes-again"
+      tags: ["Unity", "Game Design","Git","C#"]
+  
+    - title: "VGDC GameJam"
+      date: "2021-02-15"
+      description: "2D platformer game developed in Unity for a gamejam over a span of one weekend during university.  This project taught me how to be pragmatic and realistic about what features to impelement given the limited time availability. Even though the time span was short, I managed to implement some game mechanics that I have implemented before. One of such mechanics is that once you jump on the head of the enemy you can control the enemy player in such a way to use him as a block to jump organization. "
+      github_url: "https://github.com/piotr-cichon/VGDC-Fall-Game-Jam-2021/"
+      tags: ["Unity", "Game Design"]
+
+  
+    - title: "Reversed Billiards"
+      date: "2023-02-15"
+      description: "2D game developed in Unity for a gamejam with the theme \"Reversed\". I have developed with game together with my brother over one weekend. My brother came up with a nice idea of a game that fits the theme and I have helped him implement the programming side of the Game.
+                    After the game loop was ready I have designed some nice levels with my brother. In the end I would say the game was a success, especially the use of motivating music"
+      video_url:  "https://nickk2002.itch.io/reversed-8ball"
+      tags: ["Unity", "Game Design"]
+
+
+# Movies app 
+# Math web app
+# Particle simulator covid 19
+# Covid 19 game youtube
+# C++ SFML chess unfinished project
+# SEM Project
+# TJIP Project 
+# Robot Project
+# Scratch game 
+# Gamecelerator game (really bad game)
+
+# Piano
+
+# Codeforces + Hackerrank + IOI + Google Code Jam
+
+# CTS
+# Reversing 
+# Bug Bounty attempts
+
+# Game Jams
+# - 2D Platformer
+# - Wolf Game (Unreal)
+# - Mailman strikes again
+# - Reversed Pool
+
+# Calendar App (React native)
+# Julia Honours HPC setup
 programming_languages:
   - name: "JavaScript"
     icon: "https://img.icons8.com/color/50/000000/javascript.png"  
@@ -57,8 +138,12 @@ programming_languages:
     icon: "https://img.icons8.com/color/50/000000/sql.png"  
   - name: "Shell"
     icon: "https://img.icons8.com/color/50/000000/console.png"  
+  - name: "Java"
+    icon: "https://img.icons8.com/?size=100&id=Pd2x9GWu9ovX&format=png&color=000000"  
   - name: "Scala"
     icon: "https://img.icons8.com/?size=100&id=blmYmhls_jS7&format=png&color=000000"  
+  - name: "Julia"
+    icon: "https://julialang.org/assets/infra/logo.svg"  
 
 frontend_frameworks:
   - name: "Vue"
@@ -77,6 +162,8 @@ backend_frameworks:
     icon: "https://img.icons8.com/color/50/000000/spring-logo.png"  
   - name: "Node.js"
     icon: "https://img.icons8.com/color/50/000000/nodejs.png"  
+  - name: "Django"
+    icon: "https://img.icons8.com/?size=100&id=XPdRFanRZtNK&format=png&color=000000"  
   - name: "Go"
     icon: "https://img.icons8.com/color/50/000000/go.png"  
   - name: "Laravel"
@@ -100,7 +187,7 @@ ci_cd_tools:
 
 
 education:
-  - degree: "National High School, Romania"
+  - degree: "National High School"
     institution: "Tudor Vianu"
     start_time: "Sep 2017"
     end_time : "July 2021"
