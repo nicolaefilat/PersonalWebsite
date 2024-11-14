@@ -1,11 +1,10 @@
 {
   "name": "personalwebsite",
   "version": "1.0.0",
-  "main": "build.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node build.js"
+    "build": "node build.js && npx parcel build docs/index.html --dist-dir docs/ --no-cache"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +13,9 @@
   "dependencies": {
     "handlebars": "^4.7.8",
     "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.0",
+    "svgo": "^3.3.2"
   }
 }
