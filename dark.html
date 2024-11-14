@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nicolae Filat</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .link {
+      position: relative;
+      display: inline-block;
+      padding-right: 18px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #1e40af;
+      transition: color 0.3s ease;
+    }
+
+    .link::after {
+      content: '\f0c1';
+      font-family: 'Font Awesome 5 Free';
+      font-weight: 900;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.8rem;
+      color: #3b82f6;
+      transition: color 0.3s ease;
+    }
+
+    .link:hover {
+      color: #2563eb;
+    }
+
+    .link:hover::after {
+      color: #2563eb;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-gray-300 transition-all">
+  <!-- Header Section -->
+  <div class="flex flex-col">
+    <header class="bg-gray-800 text-white py-6">
+      <div class="container mx-auto px-6 flex justify-between items-center">
+        <h1 class="text-3xl font-bold">Nicolae Filat</h1>
+        <div class="flex items-center gap-4">
+          <!-- Dark/Light Mode Toggle Button -->
+          <button id="theme-toggle" class="text-gray-300 hover:text-white">
+            <i id="theme-icon" class="fas fa-moon text-2xl"></i>
+          </button>
+          <nav class="hidden md:block">
+            <a href="#projects" class="text-gray-200 hover:text-white px-4">Projects</a>
+            <a href="#skills" class="text-gray-200 hover:text-white px-4">Skills</a>
+            <a href="#contact" class="text-gray-200 hover:text-white px-4">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="flex flex-col justify-center items-center bg-gray-800 text-white px-6 py-40">
+      <h2 class="text-4xl font-semibold mb-4">Welcome to my website</h2>
+      <p class="text-gray-400 mb-8">Showcasing my projects, skills, and experiences in software development.</p>
+      <div class="inline-flex gap-10" style="gap: 1em;">
+        <a href="#education" class="bg-red-500 hover:bg-red-600 text-white py-2 px-6 rounded-full">
+          Education
+        </a>
+        <a href="#projects" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full">
+          Projects
+        </a>
+        <a href="#skills" class="bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-6 rounded-full">
+          Skills
+        </a>
+        <a href="#contact" class="bg-green-500 hover:bg-green-600 text-white py-2 px-6 rounded-full">
+          Contact
+        </a>
+      </div>
+    </section>
+  </div>
+
+  <div class="py-10">
+    <div id="education"
+      class="container mx-auto grid max-w-6xl grid-cols-1 md:grid-cols-2 gap-8 justify-center items-stretch">
+      <section>
+        <h2 class="text-3xl font-semibold font-bold text-gray-200 mb-6 inline-flex items-center gap-1">
+          <img src="https://cdn-icons-png.flaticon.com/512/3976/3976625.png" class="w-8 h-8 inline">
+          Education
+        </h2>
+        <ul class="space-y-6">
+          {{#each education}}
+          <li class="bg-gray-800 p-6 sm:p-4 shadow-md rounded-lg">
+            <h3 class="text-lg font-semibold text-gray-200 inline-flex items-start gap-1">
+              <img src="{{icon}}" alt="{{institution}}" class="w-5 h-5 mt-0.5">
+              <span> {{institution}} - {{degree}}
+              </span>
+            </h3>
+            <p class="text-sm text-gray-500">{{start_time}} - {{ end_time }}</p>
+            <p class="mt-2 text-gray-300"> {{{ description }}}
+              {{#if link}}
+              <a href="{{link}}" target="_blank" rel="noopener noreferrer">
+                <span class="text-blue-500 hover:text-blue-700">({{link_name}})</span>
+              </a>
+              {{/if}}
+            </p>
+          </li>
+          {{/each}}
+        </ul>
+      </section>
+      <section>
+        <h2 class="text-3xl font-semibold font-bold text-gray-200 mb-6 inline-flex items-center gap-1">
+          <img src="https://cdn-icons-png.flaticon.com/512/3281/3281289.png" class="w-8 h-8 inline">
+          Work Experience
+        </h2>
+        <ul class="space-y-6">
+          {{#each work_experience}}
+          <li class="bg-gray-800 p-6 shadow-md rounded-lg">
+            <h3 class="text-lg font-semibold text-gray-200">{{position}} at {{company}}</h3>
+            <p class="text-sm text-gray-500">{{duration}}</p>
+            <p class="mt-2 text-gray-300">
+              {{#each responsibilities}}
+              - {{this}}<br>
+              {{/each}}
+            </p>
+          </li>
+          {{/each}}
+        </ul>
+      </section>
+    </div>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-10 flex flex-col gap-16">
+      {{#each projects}}
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-semibold text-center mb-10 text-gray-200">{{ project_group }}</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {{#each list}}
+          <div class="bg-gray-800 shadow-lg rounded-lg flex flex-col p-6">
+            <h3 class="text-xl font-semibold mb-2 inline-flex align-centerg gap-2 text-gray-200">{{title}}
+              {{#if github_url}}
+              <a href="{{github_url}}" target="_blank" rel="noopener noreferrer"
+                class="relative group text-blue-500 hover:text-blue-700 inline-flex justify-center items-center">
+                <svg class="w-5 h-5 inline" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path
+                    d="M12 .3c-6.6 0-12 5.4-12 12 0 5.3 3.4 9.8 8.2 11.3.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.5-4-1.5-.5-1.2-1.3-1.6-1.3-1.6-1.1-.8.1-.8.1-.8 1.2.1 1.8 1.3 1.8 1.3 1.1 1.9 3 .6 3.7.5.1-.8.4-1.4.7-1.7-2.6-.3-5.4-1.3-5.4-5.8 0-1.3.5-2.5 1.3-3.3-.1-.3-.5-1.4.1-2.9 0 0 1-.3 3.2 1.3 1-.3 2.1-.4 3.2-.4s2.2.1 3.2.4c2.1-1.6 3.2-1.3 3.2-1.3.6 1.5.2 2.6.1 2.9.8.8 1.3 1.9 1.3 3.3 0 4.6-2.8 5.5-5.4 5.8.5.4.9 1.3.9 2.7v4.1c0 .3.2.7.8.6 4.7-1.5 8.2-6 8.2-11.3 0-6.6-5.4-12-12-12z">
+                  </path>
+                </svg>
+              </a>
+              {{/if}}
+            </h3>
+            <p class="text-gray-400 mb-4">{{description}}</p>
+            <a href="{{project_url}}" class="text-blue-400 hover:text-blue-600 link">Read more</a>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+      {{/each}}
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-10 bg-gray-800 text-gray-300">
+      <h2 class="text-3xl font-semibold text-center mb-10">Skills</h2>
+      <ul class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        {{#each skills}}
+        <li class="bg-gray-900 p-4 rounded-lg text-center">
+          <i class="{{icon}} text-4xl mb-4 text-gray-200"></i>
+          <span>{{name}}</span>
+        </li>
+        {{/each}}
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-10">
+      <h2 class="text-3xl font-semibold text-center mb-10">Contact</h2>
+      <div class="max-w-lg mx-auto">
+        <form>
+          <div class="mb-4">
+            <label for="name" class="block text-gray-200">Full Name</label>
+            <input type="text" id="name" name="name" class="w-full px-4 py-2 mt-2 bg-gray-800 text-gray-200 rounded"
+              required>
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-200">Email</label>
+            <input type="email" id="email" name="email" class="w-full px-4 py-2 mt-2 bg-gray-800 text-gray-200 rounded"
+              required>
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-gray-200">Message</label>
+            <textarea id="message" name="message" class="w-full px-4 py-2 mt-2 bg-gray-800 text-gray-200 rounded"
+              required></textarea>
+          </div>
+          <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded-full w-full">Send
+            Message</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 py-6 text-center">
+    <p>&copy; 2024 Nicolae Filat. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Get the current theme from localStorage or default to 'light'
+    const theme = localStorage.getItem('theme') || 'light';
+    const htmlElement = document.documentElement;
+
+    // Set the initial theme
+    if (theme === 'dark') {
+      htmlElement.classList.add('dark');
+      document.getElementById('theme-icon').classList.replace('fa-moon', 'fa-sun');
+    }
+
+    // Theme toggle button functionality
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      if (htmlElement.classList.contains('dark')) {
+        htmlElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+        document.getElementById('theme-icon').classList.replace('fa-sun', 'fa-moon');
+      } else {
+        htmlElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+        document.getElementById('theme-icon').classList.replace('fa-moon', 'fa-sun');
+      }
+    });
+  </script>
+</body>
+
+</html>
