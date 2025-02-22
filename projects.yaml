@@ -211,7 +211,6 @@ projects:
       tags: ["Python", "Automation"]
 
 
-
   - project_group: "Game development"
     list: 
     - title: "Mail Man strikes again"
@@ -243,12 +242,23 @@ projects:
     - title: "Reversed Billiards"
       date: "2023-02-15"
       description: |
-        2D game developed in Unity for a gamejam with the theme \"Reversed\". I have developed with game together with my brother over one weekend. My brother came up with a nice idea of a game that fits the theme and I have helped him implement the programming side of the Game.
+        2D game developed in Unity for a gamejam with the theme Reversed. I have developed with game together with my brother over one weekend. My brother came up with a nice idea of a game that fits the theme and I have helped him implement the programming side of the Game.
         After the game loop was ready I have designed some nice levels with my brother. In the end I would say the game was a success, especially the use of motivating music
         <br/> The game is available for download on <a class="link" href="https://nickk2002.itch.io/reversed-8ball">itch.io</a>
 
       video_url:  "https://nickk2002.itch.io/reversed-8ball"
       tags: ["Unity", "Game Design"]
+      
+  - project_group: "Cyber security & Hacking" 
+    list:
+    - title: "Crate CTF 2024"
+      date: 
+      description: | 
+        Crate CTF is competition organised by the Swedish Defence Research Agency in collaboration with the Swedish Armed Forces, designed to introduce high school and university students to the field of cybersecurity.
+        </br>
+        I participated in the KTH CTF team and our team managed to win the first place in Crate CTF 2024! I contributed to the team by solving a RISCV buffer overflow challenge.
+        Our team name was <b>RoyalRoppers</b>. <a class='link' href="https://clist.by/standings/crate-ctf-2024-54109918/">Here</a> is the final leaderboard.
+      tags: ["CTF"]
 
 
 programming_languages:
