@@ -3,54 +3,79 @@ education:
     institution: "KTH Royal Institute of Technology"
     start_time: "Sep 2024"
     end_time : "present"
-    description: "Subjects covered so far: Introduction to Machine Learning and Artificial Intelligence"
+    description: "
+      <b>Subjects</b>: Introduction to Machine Learning and Artificial Intelligence, Advanced Machine Learning, GPU Programming, Building Network Security, 
+      Artifical Neural Networks and Deep Learning Architectures, Speech Recognition"
     icon: "https://img.icons8.com/?size=100&id=WDI63NQbh3cO&format=png&color=000000"
 
   - degree: "Exchange"
     institution: "KTH Royal Institute of Technology"
     start_time: "Sep 2023"
     end_time : "Jan 2024"
-    description: "Subjects: Ethical Hacking, Cybersecurity Overview, Compiler Construction and Execution Environments, and Distributed Artificial Intelligence and Intelligent Agents."
+    description: " <b>Subjects</b>: Ethical Hacking, Cybersecurity Overview, Compiler Construction and Execution Environments, and Distributed Artificial Intelligence and Intelligent Agents."
     icon: "https://img.icons8.com/color/50/000000/graduation-cap.png"
 
   - degree: "Honours Degree"
     institution: "Technische Universiteit Delft"
     start_time: "Sep 2022"
     end_time : "Aug 2024"
-    description: "I did research in the field of program synthesis algorithms. The project aimed to find ways to generate programs that satisfy input/output examples. I have contributed to the Herb program synthesis framework."
-    link: "https://herb-ai.github.io/"
-    link_name: "Herb"
+    description: 
+      I did research in the field of program synthesis algorithms. Program synthesis aims to find ways to generate programs that satisfy input/output examples. 
+      <br />
+      I have researched wether it is possible to create a <i>meta-search</i> algorithm that can find new program synthesis algorithms by combining existing ones.
+      Algorithms could be combined by either running them in sequence on after each or in parallel. The hope was that the meta-search procedure could discover new algorithms
+      that are more efficient than the existing ones.
+      <br />
+      I have contributed to the <a href="https://herb-ai.github.io/" class="link"> Herb</a> program synthesis framework.
     icon: "https://img.icons8.com/color/50/000000/graduation-cap.png"
 
   - degree: "Bachelor in Computer Science and Engineering"
     institution: "Technische Universiteit Delft"
     start_time: "Sep 2021"
     end_time : "July 2024"
-    description: "Main Subjects: Software Project, Machine Learning, Algorithms & Data Structures, Computability Theory, Databases, Web Development"
+    description: "<b>Main Subjects</b>: 
+      Software Project, Machine Learning, Algorithms & Data Structures, Computability Theory, Databases, Web Development
+      Computer Architecture, Operating Systems, Computer Networks, Software Engineering
+
+      <br /> 
+      <br /> 
+      I had many group projects where we had to work in teams of 4-5 people. I have learned how to work in a team and how to efficiently communicate with my colleagues.
+      I have learned how to develop java backend applications using the Spring Boot framework and how to unit test applications. "
     icon: "https://img.icons8.com/color/50/000000/graduation-cap.png"
 
   - degree: "National High School"
     institution: "Tudor Vianu"
     start_time: "Sep 2017"
     end_time : "July 2021"
-    description: "Main Subjects: Informatics (Intensive), Mathematics, Physics, Chemistry"
+    description: "<b>Main Subjects</b>: Informatics (Intensive), Mathematics, Physics, Chemistry
+      <br />
+      <br />
+      During the highschool years I got introduced to world of computer science and competitive programming competitions. I have participated in many competitions on 
+      codeforces and similar websites. I have also participated in the Romanian Olympiad in Informatics and I have qualified for the national stage of the competition
+      in the 11<sup>th</sup> grade.
+      I mainly solved problems using C++ and I learned dynamic programming and graph algorithms.
+    "
     icon: "https://img.icons8.com/color/50/000000/school.png"
 
 work_experience:
   - company: "Nexis Africa"
     position: "Remote Software Engineer Intern"
-    duration: "Sep 2024 - Nov 2024"
+    duration: "Sep 2024 - Feb 2025"
     responsibilities:
       - "Develop a web app for managing water payment subscription"
       - "Contribute to the Vue frontend and the Go backend"
-      - "Setup Jenkins CI/CD using Docker and Ansible for the project"
+      - "Setup Jenkins CI/CD using Docker and Ansible for deployment"
       - "Build a whatsapp customer chatbot using Whatsapp API"
+      - "<b>Tech Stack</b>: Go, VueJs, Jenkins, Ansible, Deno, MySQL"
+  
   - company: "Visionary Cities Romania"
     position: "Freelancer for Institute"
     duration: "Sep 2022 - July 2024"
     responsibilities:
       - "Develop an API in Python to get get statistics data from various web sources with the aim to create a city index that measures the attractiveness of the Romanian cities"
       - "The data was scraped or was taken using an API key from tripadvisors, google maps, google reviews, Romanian National Institute of Statistics, etc"
+      - "<b>Tech Stack</b>: Python, Django, WebScraping"
+
   - company: "TU Delft"
     position: "Teacher Assistant"
     duration: "Sep 2022 - July 2023"
@@ -70,6 +95,8 @@ work_experience:
     responsibilities:
       - "Implement a web application that allows employees to give 360 feedback to each other"
       - "Developed in a team of 5 students"
+      - "Conducted user evaluation with the employees of the company"
+      - "<b>Tech Stack</b>: VueJS, ASP.NET Core, Mongodb, Event Sourcing"
 
 # Movies app 
 # Math web app
@@ -91,10 +118,7 @@ work_experience:
 # Bug Bounty attempts
 
 # Game Jams
-# - 2D Platformer
 # - Wolf Game (Unreal)
-# - Mailman strikes again
-# - Reversed Pool
 
 # Calendar App (React native)
 # Julia Honours HPC setup
@@ -129,6 +153,24 @@ projects:
       github_url: "https://github.com/petruanica/Connect_4"
       video_url: "https://connect4-rseh.onrender.com/"
       tags: ["JS", "Node", "Figma"]
+    
+    - title: "OOP Project"
+      date: "2022-03-01"
+      description: |
+        Quiz like multiplayer desktop game where players answer sustainability questions. The game was developed in a team of 5 people. We had to use JavaFx and Spring Boot for the backend. To make the game more fun we added a lot of powerups and animations.
+      video_url: "https://vimeo.com/1029792995"
+      tags: ["JavaFX", "SpringBoot","Hybernate"]
+
+    - title: "Software Engineering Methods Project"
+      date: "2023-01-12"
+      description: |
+        This project was made in a team part of a course about software architecture and design patterns. We had to build an API backend for managing a fictious pizza delivery service. 
+        <br/>
+        The software was structured using microservices that implemented specific requirements: authentication, coupon mangement, order making. The code was throughly tested achieving 99% test coverage with
+        both unit and integration tests. During this project, I learned about domain driven design and how to structure the code in a modular and extensible fashion. I have also learned how to use the Hibernate ORM features and
+        I improved my debugging skills when hunting for bugs that spanned multiple microservices. 
+      tags: ["Java", "SpringBoot","Microservices","DDD"]
+
     - title: "Compiler for a subset of the C language"
       date: "2024-01-01"
       description: |
@@ -140,17 +182,25 @@ projects:
         assembly was far from great. For any expression I would save the values on the stack and only if necessary use registers. This meant that a lot of simple would use stack allocation 
         even though enough registers would be available. Overall it was a very challenging project but very rewarding in the end.  
       tags: ["Scala", "x86","Functional Programming","Parsing"]
-    - title: "OOP Project"
-      date: "2022-03-01"
+    
+    - title: "Building and setting up an emulated employee network"
+      date: "2024-01-03"
       description: |
-        Quiz like multiplayer desktop game where players answer sustainability questions. The game was developed in a team of 5 people. We had to use JavaFx and Spring Boot for the backend. To make the game more fun we added a lot of powerups and animations.
-      video_url: "https://vimeo.com/1029792995"
-      tags: ["JavaFX", "SpringBoot","Hybernate"]
+        This project was made as part of a course called <i>Building Network Security</i>. We were given two routers and a few ethernet cables and we had to setup 
+        a company that would have two branches: one in Stockholm and one in London. The fictive employees needed access to a secure fileserver in both Stockholm and London 
+        that should be accessible both from the company network and from using the VPN. 
+        <br/> <br/>
+        In this project I learned how to configure many linux systems and how to debug network issues of different sorts. I have configured an OpenWRT router with firewall 
+        rules, wireguard vpn and wpa3 wifi security. I have also deployed a freeradius server for wpa3 eap-tls authentication.  
+        To monitor the network we configured snort with fail2ban to block ban the IPs of malicious actors. <br/>
+        For the secure file servers we deployed two OwnCloud servers that had authentication integrated with an LDAP server deployed on a FreeIPA Fedora VM.
+      tags: ["Linux", "Docker","FreeRadius","OpenWRT","Snort","Wireguard","FreeIPA","WPA3",OwnCloud"]
+
 
   - project_group: "Free-time Projects" 
     list:
     - title: "Log Viewer"
-      data: "2023-01-01"
+      data: "2023-05-01"
       description: |
         A <em>Flask</em> based web application with a frontend that features two interactive buttons. When a button is clicked, an event is sent to the backend, 
         which randomly responds with either success or failure. This response, along with the button clicked, should be logged in a UI element on the frontend (a <em>log viewer</em>).
@@ -251,6 +301,13 @@ projects:
       
   - project_group: "Cyber security & Hacking" 
     list:
+    - title: "Bug Bounty on Hackerone"
+      date: 
+      description: | 
+        After taking the Ethical Hacking course I started searching for bugs on the Hackone bug bounty platform. I did not manage to find any real few bugs in the past months but I am not giving up yet.
+        I mostly focus on web exploitation bugs such as XSS and CSRF. I have done a few labs on PortSwigger to learn common web vulnerabilities and how to exploit them.
+      tags: ["Bug Bounty", "Hackerone"]
+
     - title: "Crate CTF 2024"
       date: 
       description: | 

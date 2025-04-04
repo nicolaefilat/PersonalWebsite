@@ -13,7 +13,8 @@
   "description": "",
   "dependencies": {
     "handlebars": "^4.7.8",
-    "js-yaml": "^4.1.0"
+    "js-yaml": "^4.1.0",
+    "nodemon": "^3.1.9"
   },
   "devDependencies": {
     "live-server": "^1.2.0",
