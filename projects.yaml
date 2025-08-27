@@ -58,45 +58,48 @@ education:
     icon: "https://img.icons8.com/color/50/000000/school.png"
 
 work_experience:
+  - company: "Visionary Cities"
+    position: "Freelancer Software Developer"
+    location: "Romania"
+    duration: "Sep 2022 - July 2025"
+    responsibilities:
+      - "Development and maintenance of a Django API that gathers statistics data from various web sources to create a comprehensive city index to measure the performance of Romanian cities based on 50 KPIs."
+      - "The data comes from Tripadvisor, Google Maps, Google Reviews, Romanian National Institute of Statistics and other official sources"
+      - "<b>Tech Stack</b>: Django, Python, Apify Actors, Web scraping, Selenium, Beautiful soup"
   - company: "Nexis Africa"
-    position: "Remote Software Engineer Intern"
+    position: "Software Engineer"
+    location: "Remote"
     duration: "Sep 2024 - Feb 2025"
     responsibilities:
-      - "Develop a web app for managing water payment subscription"
-      - "Contribute to the Vue frontend and the Go backend"
+      - "Developed smart water metering application"
+      - "Decoded in-house network packets sent by LoRa sensors"
       - "Setup Jenkins CI/CD using Docker and Ansible for deployment"
       - "Build a whatsapp customer chatbot using Whatsapp API"
-      - "<b>Tech Stack</b>: Go, VueJs, Jenkins, Ansible, Deno, MySQL"
-  
-  - company: "Visionary Cities Romania"
-    position: "Freelancer for Institute"
-    duration: "Sep 2022 - July 2024"
+      - "<b>Tech Stack</b>: Go, Vue, MySQL, Jenkins, Docker, Ansible, Zabbix, Deno"
+  - company: "Tjip The Platform Engineer"
+    position: "Internship"
+    location: "Delft, Netherlands"
+    duration: "July 2023 - Aug 2023"
     responsibilities:
-      - "Develop an API in Python to get get statistics data from various web sources with the aim to create a city index that measures the attractiveness of the Romanian cities"
-      - "The data was scraped or was taken using an API key from tripadvisors, google maps, google reviews, Romanian National Institute of Statistics, etc"
-      - "<b>Tech Stack</b>: Python, Django, WebScraping"
-
+      - "Implement a web application that allows employees to give 360 feedback to each other"
+      - "Developed in a team of 5 students"
+      - "Conducted user evaluation with the employees of the company"
+      - "<b>Tech Stack</b>: C#, Vue, MongoDB, ASP.Net Core, Event Sourcing, Typescript"
   - company: "TU Delft"
     position: "Teacher Assistant"
+    location: "Delft, Netherlands"
     duration: "Sep 2022 - July 2023"
     responsibilities:
       - "Help with answering student’s questions during the lab and grade assignments or exams"
       - "TA for Reasoning and Logic, OOP in Java, Computer Organization, Web & Database Technology, Information & Data Management"
-  - company: "Interactive Software Romania"
+  - company: "Interactive Software"
     position: "Internship programme"
+    location: "Romania"
     duration: "July 2022 - Aug 2022"
     responsibilities:
       - "Parsing XML files using the C#"
       - "Fixing failing unit tests for military software used by NATO"
       - "Write geometry tests using geodesic math"
-  - company: "Tjip The Platform Engineer"
-    position: "Internship"
-    duration: "July 2022 - Aug 2022"
-    responsibilities:
-      - "Implement a web application that allows employees to give 360 feedback to each other"
-      - "Developed in a team of 5 students"
-      - "Conducted user evaluation with the employees of the company"
-      - "<b>Tech Stack</b>: VueJS, ASP.NET Core, Mongodb, Event Sourcing"
 
 # Movies app 
 # Math web app
@@ -104,7 +107,6 @@ work_experience:
 # Covid 19 game youtube
 # C++ SFML chess unfinished project
 # SEM Project
-# TJIP Project 
 # Robot Project
 # Scratch game 
 # Gamecelerator game (really bad game)
@@ -113,9 +115,6 @@ work_experience:
 
 # Codeforces + Hackerrank + IOI + Google Code Jam
 
-# CTS
-# Reversing 
-# Bug Bounty attempts
 
 # Game Jams
 # - Wolf Game (Unreal)
