@@ -1,0 +1,242 @@
+- project_group: "University Projects"
+  list:
+    - id: space-invaders
+      title: "Space Invaders in x86 Assembly"
+      date: "2021-10-01"
+      short_description: "A space invaders game written entirely in x86 assembly with custom sound effects."
+      description: |
+        A space invaders game written entirely in x86 assembly. This was a bonus project in a team for my Computer Architecture class. We only had access to basic functions to implement 
+        the game: prints something on the screen and a timer to control the fps. Because the project was done a group of 3 people, the teachers required us to add "extra" features like sound effects.
+        <br/> <br/>
+        Adding sound in x86 Assembly was <b>not</b> easy. I have improvised a melody on the piano and they used the frequencies of the notes to play some basic sound track.
+        <br/> <br/>
+        We had a lot of low level bugs that were difficult to debug but we have managed to complete the project on time. In this project, I learned the importance of persistence, as there were many times 
+        when I felt like giving up due to challenging low-level bugs that were difficult to debug
+      video_url: "https://photos.google.com/share/AF1QipP62oKHpP53dQcQ9cWUJGQQ12fGLwyfKQxp4iuO4s6nAnFrEGwWsQSqAEOcc2Ra-A?key=bklxZzNkRFNMOUVaTlJtaEJYZDN1MFRSdWFMWHBn"
+      tags: ["x86", "Team Project", "Low Level"]
+      image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80"
+
+    - id: connect-4
+      title: "Connect 4"
+      date: "2022-01-31"
+      short_description: "Multiplayer Connect 4 game built with Vanilla JS and WebSockets."
+      description: |
+        A multiplayer connect4 game in browser using web sockets and node. Vanilla JS was used because it was a requirement from the university. 
+        The game was developed in a team with another colleague. 
+        <br/> <br/>
+        The UI was first prototyped in Figma and then we implemented it in css using grid and flexbox. The websocket logic was the most difficult part of the project. 
+        Because we were not using any JS framework we had to use low level socket browser APIs to send and receive messages. 
+        <br/> <br/>
+        You can try out the game in the browser as it is available on the Internet <a class="link" href="https://connect4-rseh.onrender.com">here </a>
+        (The page might take one minute to load for the first time because I am using a free deployment service). You can open two 
+        browser tabs and play with yourself if you do not have someone else to play with.
+      github_url: "https://github.com/petruanica/Connect_4"
+      video_url: "https://connect4-rseh.onrender.com/"
+      tags: ["JS", "Node", "Figma"]
+      image: "https://images.unsplash.com/photo-1611996575749-79a3a250f948?auto=format&fit=crop&w=800&q=80"
+
+    - id: oop-project
+      title: "OOP Project"
+      date: "2022-03-01"
+      short_description: "Multiplayer sustainability quiz game built with JavaFX and Spring Boot."
+      description: |
+        Quiz like multiplayer desktop game where players answer sustainability questions. The game was developed in a team of 5 people. We had to use JavaFx and Spring Boot for the backend. To make the game more fun we added a lot of powerups and animations.
+      video_url: "https://vimeo.com/1029792995"
+      tags: ["JavaFX", "SpringBoot", "Hibernate"]
+      image: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80"
+
+    - id: software-engineering-methods
+      title: "Software Engineering Methods Project"
+      date: "2023-01-12"
+      short_description: "Microservices-based backend for a pizza delivery service using Spring Boot."
+      description: |
+        This project was made in a team part of a course about software architecture and design patterns. We had to build an API backend for managing a fictious pizza delivery service. 
+        <br/>
+        The software was structured using microservices that implemented specific requirements: authentication, coupon mangement, order making. The code was throughly tested achieving 99% test coverage with
+        both unit and integration tests. During this project, I learned about domain driven design and how to structure the code in a modular and extensible fashion. I have also learned how to use the Hibernate ORM features and
+        I improved my debugging skills when hunting for bugs that spanned multiple microservices. 
+      tags: ["Java", "SpringBoot", "Microservices", "DDD"]
+      image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80"
+
+    - id: compiler-c-subset
+      title: "Compiler for a subset of the C language"
+      date: "2024-01-01"
+      short_description: "Scala-based compiler generating x86 assembly for a subset of C."
+      description: |
+        This project was made as part of a course about Compilers and Execution Environments. The task was to generate assembly code for a given string of c code.
+        I implemented parsing, typechecking, AST to IR and IR to assembly. My compiler was able to support all binary operators, loops and conditionals. 
+        The compiler was implemented in scala using pattern matching and recursion.
+        <br/> <br/> 
+        This is probably the <b>most difficult </b> project I have ever made so far. The code base was around 1000 lines of code of complex complier logic. The performance of the generated 
+        assembly was far from great. For any expression I would save the values on the stack and only if necessary use registers. This meant that a lot of simple would use stack allocation 
+        even though enough registers would be available. Overall it was a very challenging project but very rewarding in the end.  
+      tags: ["Scala", "x86", "Functional Programming", "Parsing"]
+      image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80"
+
+    - id: employee-network
+      title: "Building and setting up an emulated employee network"
+      date: "2024-01-03"
+      short_description: "Emulated employee network setup with secure file servers and VPN access."
+      description: |
+        This project was made as part of a course called <i>Building Network Security</i>. We were given two routers and a few ethernet cables and we had to setup 
+        a company that would have two branches: one in Stockholm and one in London. The fictive employees needed access to a secure fileserver in both Stockholm and London 
+        that should be accessible both from the company network and from using the VPN. 
+        <br/> <br/>
+        In this project I learned how to configure many linux systems and how to debug network issues of different sorts. I have configured an OpenWRT router with firewall 
+        rules, wireguard vpn and wpa3 wifi security. I have also deployed a freeradius server for wpa3 eap-tls authentication.  
+        To monitor the network we configured snort with fail2ban to block ban the IPs of malicious actors. <br/>
+        For the secure file servers we deployed two OwnCloud servers that had authentication integrated with an LDAP server deployed on a FreeIPA Fedora VM.
+      tags: ["Linux", "Docker", "FreeRadius", "OpenWRT", "Snort", "Wireguard", "FreeIPA", "WPA3", "OwnCloud"]
+      image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80"
+
+- project_group: "Free-time Projects" 
+  list:
+    - id: log-viewer
+      title: "Log Viewer"
+      date: "2023-05-01"
+      short_description: "Flask web app with a persistent log viewer and dark mode."
+      description: |
+        A <em>Flask</em> based web application with a frontend that features two interactive buttons. When a button is clicked, an event is sent to the backend, 
+        which randomly responds with either success or failure. This response, along with the button clicked, should be logged in a UI element on the frontend (a <em>log viewer</em>).
+        Importantly, this log is persisted between user sessions.
+        <br/> <br/>
+        In this project, I mainly focused on making a clean interface with a dark mode toggle and with a responsive design that works well on any device.
+      github_url: "https://github.com/nicolaefilat/LogViewer"
+      tags: ["TailWind CSS", "React", "Flask"]
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+
+    - id: quasar-todo
+      title: "Quasar-Todo-App"
+      date: "2022-06-10"
+      short_description: "Cross-platform to-do app built with Quasar and Vue.js."
+      github_url: "https://github.com/nicolaefilat/Quasar-Todo-App"
+      description: | 
+        A cross-platform to-do app built with <a class="link" href="https://quasar.dev/">Quasar</a> and Vue. This was the project in which I have learned how to use the Vue framework which Quasar relies on.
+        The todo-app has quite a nice UI for a "simple" to-do app because I wanted to use this app for my daily planning. <br/> I have developed this app in one week.
+      tags: ["Vue", "Quasar", "Cross-Platform Development"]
+      image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=800&q=80"
+
+    - id: row-reduction
+      title: "RowReductionJavaFX"
+      date: "2021-09-20"
+      short_description: "JavaFx application that displays row reduction steps with Latex formatting."
+      github_url: "https://github.com/nicolaefilat/RowReductionJavaFX"
+      description: | 
+        JavaFx application that displays row reduction steps with Latex formatting.
+        <br/>
+        I have implemented this small application because I was preparing for the Linear Algebra exam and I wanted to check that I was performing the row reduction steps correctly. 
+      tags: ["Java", "JavaFX", "Latex", "Linear Algebra"]
+      image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=800&q=80"
+
+    - id: xknx-automation
+      title: "XKNK-Automatisation"
+      date: "2021-07-16"
+      short_description: "Python automation scripts for managing smart home energy consumption."
+      github_url: "https://github.com/nicolaefilat/XKNK-Automatisation"
+      description: |
+        Python automation scripts for managing XKNX electrical systems. 
+        <br/> 
+        In a smart home, a resident might want to reduce the electrical consumption of their appliances by monitoring their energy usage. This project enables users to set usage limits for "groups" 
+        of appliances, and when these limits are exceeded, the highest-consuming appliances are automatically disconnected from the power supply. After some time, the system will try to restart the 
+        turned off appliances if the do no exceed the consumption limit.
+      tags: ["Python", "Automation"]
+      image: "https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&w=800&q=80"
+
+    - id: movies-search
+      title: "Movies search App" 
+      date: "2021-02-15" 
+      short_description: "Web app for searching and filtering movies using TheMovieDatabase API."
+      description: | 
+        Web app that shows movies from <a class="link" href="https://www.themoviedb.org/"> TheMovieDatabase </a> API. The app just shows movie pictures in a nice format and allows for filtering movies based on rating, director and name. The backend was written in Django. 
+        <br/> <br/> This was my <b>first</b> project where I have tried to make a UI that actually looks good. I have used Figma to prototype the design and them implemented it in CSS + HTML. In order to have a nicer scroll bar I have implemented one from scratch using vanilla javascript.
+      video_url: "https://vimeo.com/535587752"
+      tags: ["Django", "Figma", "API"]
+      image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=800&q=80"
+
+    - id: ai-covid-19
+      title: "AI-Covid-19"
+      date: "2020-07-19"  
+      short_description: "A Covid-19 simulation game where players infect as many people as possible."
+      github_url: "https://github.com/nicolaefilat/AI-Covid-19"
+      description: "A Covid-19 simulation game where players infect as many people as possible."
+      tags: ["C#", "Game Development", "AI", "3D"]
+      image: "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&w=800&q=80"
+
+    - id: movies-script-helper
+      title: "Movies-Script-Helper"
+      date: "2021-02-15"
+      short_description: "Python scripts for subtitle management and directory organization."
+      github_url: "https://github.com/nicolaefilat/Movies-Script-Helper"
+      description: "Python scripts for subtitle management and directory organization."
+      tags: ["Python", "Automation"]
+      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=800&q=80"
+
+- project_group: "Game development"
+  list: 
+    - id: mail-man
+      title: "Mail Man strikes again"
+      date: "2019-03-01"
+      short_description: "3D Unity game where a mailman delivers mail while dodging obstacles."
+      description: "3D game developed in Unity for a gamejam with the theme \"UnexpectedGame\".Because I did not have a team I have joined a team on discord with people that I did not know. I worked with two students from USA and someone else from UK.
+                    Because we the gamejam spanned two weeks we had a lot of time to try and prototype many different ideas. Unfortunately, we were too optimistic about our skills and we had to modify the initial idea of the game to something that we could implement in the given time.
+                    The idea we implemented is that the player is a mailman that has to deliver mail to the right boxes. The player can throw the mail to deliver it to the matching mail box. To make the game more challenging we added a timer for each level. In higher levels, boxes drop from the \"sky\" that block you from throwing the mail.
+                    We have added more crazy ideas such as dynamite for destroying the boxes. You can see the game submission at the url on top. 
+                    During this experience I have learned how to communicate in a team and how to be clear about my expectations from the other team members. Unfortunately, half way through the project, one team member was disappointed by the fact that we limit the scope of the game too much and decided to leave the team.
+                    However, we handled the situation correctly and we continued the project without any hard feelings.
+                    I have also learned how to structure the code better and it was my first project on Github where I would have another contributor apart from myself (haha).
+                    It was this project that taught me how to solve merge conflicts, create branches and work with git in a more proficient way.
+                    "
+      video_url:  "https://agyscon.itch.io/the-mail-man-strikes-again"
+      tags: ["Unity", "Game Design", "Git", "C#"]
+      image: "https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&w=800&q=80"
+  
+    - id: vgdc-gamejam
+      title: "VGDC GameJam"
+      date: "2021-02-15"
+      short_description: "2D platformer game with unique enemy control mechanics."
+      description: |
+        2D platformer game developed in Unity for a gamejam over a span of one weekend during university.  This project taught me how to be pragmatic and realistic about what features to implement given the limited time availability. 
+        <br/> <br/>
+        Even though the time span was short, 
+        I managed to implement some game mechanics that I have never implemented before. One of such mechanics is that once you jump on the head of the enemy you can control the enemy player to use him to your advantage.
+        <br/> The game is available for download on <a class="link" href="https://p31ikan.itch.io/try-to-speedrun-this">itch.io</a>
+      github_url: "https://github.com/piotr-cichon/VGDC-Fall-Game-Jam-2021/"
+      video_url: "https://vimeo.com/648383998"
+      tags: ["Unity", "Game Design"]
+      image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?auto=format&fit=crop&w=800&q=80"
+
+    - id: reversed-billiards
+      title: "Reversed Billiards"
+      date: "2023-02-15"
+      short_description: "Reversed billiards game developed for a game jam."
+      description: |
+        2D game developed in Unity for a gamejam with the theme Reversed. I have developed with game together with my brother over one weekend. My brother came up with a nice idea of a game that fits the theme and I have helped him implement the programming side of the Game.
+        After the game loop was ready I have designed some nice levels with my brother. In the end I would say the game was a success, especially the use of motivating music
+        <br/> The game is available for download on <a class="link" href="https://nickk2002.itch.io/reversed-8ball">itch.io</a>
+      video_url:  "https://nickk2002.itch.io/reversed-8ball"
+      tags: ["Unity", "Game Design"]
+      image: "https://img.itch.zone/aW1hZ2UvMjE2MTYxMy8xMjczNjI2Ni5wbmc=/347x500/a5x%2FQi.png"
+      
+- project_group: "Cyber security & Hacking" 
+  list:
+    - id: bug-bounty
+      title: "Bug Bounty on Hackerone"
+      date: "2023-01-01"
+      short_description: "Hunting for web vulnerabilities like XSS and CSRF on HackerOne."
+      description: | 
+        After taking the Ethical Hacking course I started searching for bugs on the Hackone bug bounty platform. I did not manage to find any real few bugs in the past months but I am not giving up yet.
+        I mostly focus on web exploitation bugs such as XSS and CSRF. I have done a few labs on PortSwigger to learn common web vulnerabilities and how to exploit them.
+      tags: ["Bug Bounty", "Hackerone"]
+      image: "./bug-bounty.png"
+
+    - id: crate-ctf
+      title: "Crate CTF 2024"
+      date: "2024-01-01"
+      short_description: "First place winner in Crate CTF 2024 with the RoyalRoppers team."
+      description: | 
+        Crate CTF is competition organised by the Swedish Defence Research Agency in collaboration with the Swedish Armed Forces, designed to introduce high school and university students to the field of cybersecurity.
+        </br>
+        I participated in the KTH CTF team and our team managed to win the first place in Crate CTF 2024! I contributed to the team by solving a RISCV buffer overflow challenge.
+        Our team name was <b>RoyalRoppers</b>. <a class='link' href="https://clist.by/standings/crate-ctf-2024-54109918/">Here</a> is the final leaderboard.
+      tags: ["CTF"]
+      image: "./ctf-campus.png"

@@ -1,0 +1,24 @@
+- role: Freelancer Software Developer
+  company: Visionary Cities Romania
+  period: Sep 2022 - July 2025
+  desc: "Developed Django API for city statistics. Tech Stack: Django, Python, Apify, Selenium, Beautiful Soup."
+
+- role: Software Engineer
+  company: Nexis Africa Remote
+  period: Sep 2024 - Feb 2025
+  desc: "Developed smart water metering app, decoded LoRa packets, setup Jenkins CI/CD. Tech Stack: Go, Vue, MySQL, Jenkins, Docker, Ansible."
+
+- role: Internship - Platform Engineer
+  company: Tjip (Delft, Netherlands)
+  period: July 2023 - Aug 2023
+  desc: "Implemented 360 feedback web app. Tech Stack: C#, Vue, MongoDB, ASP.Net Core, Event Sourcing, Typescript."
+
+- role: Teacher Assistant
+  company: TU Delft
+  period: Sep 2022 - July 2023
+  desc: "TA for Reasoning and Logic, OOP in Java, Computer Organization, Web & Database Technology."
+
+- role: Internship Programme
+  company: Interactive Software Romania
+  period: July 2022 - Aug 2022
+  desc: "Parsing XML with C#, fixing unit tests for military software, writing geometry tests."
