@@ -227,7 +227,7 @@
         After taking the Ethical Hacking course I started searching for bugs on the Hackone bug bounty platform. I did not manage to find any real few bugs in the past months but I am not giving up yet.
         I mostly focus on web exploitation bugs such as XSS and CSRF. I have done a few labs on PortSwigger to learn common web vulnerabilities and how to exploit them.
       tags: ["Bug Bounty", "Hackerone"]
-      image: "./bug-bounty.png"
+      image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fres.cloudinary.com%2Fstartup-grind%2Fimage%2Fupload%2Fc_fill%2Cdpr_2.0%2Cf_auto%2Cg_center%2Ch_900%2Cq_auto%3Agood%2Cw_1200%2Fv1%2Fgcs%2Fplatform-data-hackerone%2Fcontentbuilder%2Fsocial_image.png&f=1&nofb=1&ipt=75088c5962cf2fc9372fdb2955d363303f492e0511c044b43bb5f9abef6e326b"
 
     - id: crate-ctf
       title: "Crate CTF 2024"
@@ -239,4 +239,4 @@
         I participated in the KTH CTF team and our team managed to win the first place in Crate CTF 2024! I contributed to the team by solving a RISCV buffer overflow challenge.
         Our team name was <b>RoyalRoppers</b>. <a class='link' href="https://clist.by/standings/crate-ctf-2024-54109918/">Here</a> is the final leaderboard.
       tags: ["CTF"]
-      image: "./ctf-campus.png"
+      image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.licdn.com%2Fdms%2Fimage%2FD5612AQH-Ap4I7tvnOg%2Farticle-cover_image-shrink_600_2000%2F0%2F1683380521228%3Fe%3D2147483647%26v%3Dbeta%26t%3DxONaIruqkvpmKS20cdb9bxSdCSR-VVrT7MSdyJlnitE&f=1&nofb=1&ipt=1e374458686a37615476b038e7a5e5740f65acdcd9b03e0acc13f85692cbce31"

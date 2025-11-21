@@ -5,9 +5,14 @@ import yaml from '@rollup/plugin-yaml'
 // https://vite.dev/config/
 export default defineConfig({
     plugins: [react(), yaml()],
-    // add the name of the repo as a base url
-    base: '/PersonalWebsite/',
+    // Empty string makes paths relative, allowing deployment to any subdirectory
+    base: '',
     build: {
         outDir: 'docs',
+    },
+    resolve: {
+        alias: {
+            '@config': '/config',
+        },
     },
 })

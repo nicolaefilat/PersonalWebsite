@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -7,6 +8,12 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Experience from './components/Experience';
 import ProjectDetails from './components/ProjectDetails';
+
+import siteData from '@config/site.yaml';
+
+interface SiteConfig {
+  documentTitle: string;
+}
 
 const Home = () => (
   <main>
@@ -19,6 +26,12 @@ const Home = () => (
 );
 
 function App() {
+  const siteConfig: SiteConfig = siteData as SiteConfig;
+
+  useEffect(() => {
+    document.title = siteConfig.documentTitle;
+  }, []);
+
   return (
     <div className="min-h-screen text-foreground bg-background">
       <Navbar />

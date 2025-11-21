@@ -4,9 +4,16 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Code2 } from 'lucide-react';
 import { ThemeToggle } from './ThemeToggle';
 
+import siteData from '@config/site.yaml';
+
+interface SiteConfig {
+  title: string;
+}
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const siteConfig: SiteConfig = siteData as SiteConfig;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,7 +37,7 @@ const Navbar = () => {
           <div className="flex-shrink-0 flex items-center cursor-pointer">
             <Link to="home" smooth={true} duration={500} className="flex items-center gap-2">
               <Code2 className="h-8 w-8 text-primary" />
-              <span className="font-bold text-xl tracking-wider">PORTFOLIO</span>
+              <span className="font-bold text-xl tracking-wider">{siteConfig.title}</span>
             </Link>
           </div>
 

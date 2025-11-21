@@ -4,7 +4,7 @@ import { Mail } from 'lucide-react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import Container from './Container';
-import personalData from '../data/personal.yaml';
+import personalData from '@config/personal.yaml';
 
 interface PersonalInfo {
   name: string;

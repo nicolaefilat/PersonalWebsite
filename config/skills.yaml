@@ -1,0 +1,12 @@
+- title: "Languages"
+  icon: "Code"
+  skills: ["JavaScript", "TypeScript", "Python", "C", "C++", "PHP", "Go", "Rust", "SQL", "Shell", "Java", "Scala", "Julia"]
+- title: "Frontend"
+  icon: "Palette"
+  skills: ["Vue", "React", "Tailwind CSS", "Quasar"]
+- title: "Backend"
+  icon: "Terminal"
+  skills: ["ASP.NET", "Spring", "Node.js", "Django", "Flask", "Go", "Laravel", "MongoDB", "MySQL", "PostgreSQL"]
+- title: "CI/CD & Tools"
+  icon: "Cpu"
+  skills: ["Jenkins", "Docker", "Linux", "Ansible"]

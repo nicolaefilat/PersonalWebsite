@@ -6,7 +6,7 @@ import { ArrowLeft, ExternalLink } from 'lucide-react';
 import { FaGithub } from 'react-icons/fa';
 import Container from './Container';
 
-import { getAllProjects } from '../data/projects';
+import { getAllProjects } from '../utils/projects';
 
 const ProjectDetails = () => {
     const { id } = useParams();

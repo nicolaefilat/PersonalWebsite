@@ -2,8 +2,8 @@
 import { motion } from 'framer-motion';
 import { Briefcase, GraduationCap, Calendar } from 'lucide-react';
 
-import educationData from '../data/education.yaml';
-import workData from '../data/work.yaml';
+import educationData from '@config/education.yaml';
+import workData from '@config/work.yaml';
 
 import Container from './Container';
 

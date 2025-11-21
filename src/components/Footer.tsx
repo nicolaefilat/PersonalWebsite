@@ -1,6 +1,12 @@
 
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import personalData from '../data/personal.yaml';
+import personalData from '@config/personal.yaml';
+
+import siteData from '@config/site.yaml';
+
+interface SiteConfig {
+  footerText: string;
+}
 
 interface PersonalInfo {
   name: string;
@@ -17,13 +23,15 @@ interface PersonalInfo {
 
 const Footer = () => {
   const personal: PersonalInfo = personalData as PersonalInfo;
+  const siteConfig: SiteConfig = siteData as SiteConfig;
+  const year = new Date().getFullYear();
 
   return (
     <footer className="bg-background border-t border-border py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
         <div className="text-center md:text-left">
           <p className="text-muted-foreground text-sm">
-            © {new Date().getFullYear()} Portfolio. All rights reserved.
+            {siteConfig.footerText.replace('{year}', year.toString())}
           </p>
         </div>
 

@@ -4,7 +4,7 @@ import { FaGithub } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Container from './Container';
 
-import { projectGroups, ProjectGroup, Project } from '../data/projects';
+import { projectGroups, ProjectGroup, Project } from '../utils/projects';
 
 const Projects = () => {
 

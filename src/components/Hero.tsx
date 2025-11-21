@@ -5,7 +5,17 @@ import { ArrowRight } from 'lucide-react';
 
 import Container from './Container';
 
+import personalData from '@config/personal.yaml';
+
+interface PersonalInfo {
+  name: string;
+  role: string;
+  heroDescription: string;
+}
+
 const Hero = () => {
+  const personal: PersonalInfo = personalData as PersonalInfo;
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-background">
       {/* Background Elements */}
@@ -20,12 +30,12 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-primary font-semibold tracking-wide uppercase mb-4">Software Developer & Engineer</h2>
+          <h2 className="text-primary font-semibold tracking-wide uppercase mb-4">{personal.role}</h2>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-foreground">
-            Nicolae Filat
+            {personal.name}
           </h1>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-            Welcome to my professional world. Explore my journey, skills, and projects in the field of software development and engineering.
+            {personal.heroDescription}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

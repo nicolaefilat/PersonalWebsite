@@ -1,32 +1,37 @@
-
 import { motion } from 'framer-motion';
-import { Code, Palette, Terminal, Cpu } from 'lucide-react';
+import * as LucideIcons from 'lucide-react';
 
 import Container from './Container';
+import siteData from '@config/site.yaml';
+import skillsData from '@config/skills.yaml';
+import personalData from '@config/personal.yaml';
+
+interface SkillCategory {
+  title: string;
+  icon: keyof typeof LucideIcons;
+  skills: string[];
+}
+
+interface PersonalInfo {
+  bio: string;
+}
+
+interface SiteConfig {
+  enableSkillHover?: boolean;
+}
+
+const getLucideIcon = (iconName: string) => {
+  const IconComponent = LucideIcons[iconName as keyof typeof LucideIcons] as React.ElementType;
+  if (IconComponent) {
+    return <IconComponent className="w-6 h-6" />;
+  }
+  return <LucideIcons.Code className="w-6 h-6" />;
+};
 
 const About = () => {
-  const skillCategories = [
-    {
-      title: "Languages",
-      icon: <Code className="w-6 h-6" />,
-      skills: ["JavaScript", "TypeScript", "Python", "C", "C++", "PHP", "Go", "Rust", "SQL", "Shell", "Java", "Scala", "Julia"]
-    },
-    {
-      title: "Frontend",
-      icon: <Palette className="w-6 h-6" />,
-      skills: ["Vue", "React", "Tailwind CSS", "Quasar"]
-    },
-    {
-      title: "Backend",
-      icon: <Terminal className="w-6 h-6" />,
-      skills: ["ASP.NET", "Spring", "Node.js", "Django", "Flask", "Go", "Laravel", "MongoDB", "MySQL", "PostgreSQL"]
-    },
-    {
-      title: "CI/CD & Tools",
-      icon: <Cpu className="w-6 h-6" />,
-      skills: ["Jenkins", "Docker", "Linux", "Ansible"]
-    }
-  ];
+  const skillCategories: SkillCategory[] = skillsData as SkillCategory[];
+  const personal: PersonalInfo = personalData as PersonalInfo;
+  const siteConfig: SiteConfig = siteData as SiteConfig;
 
   return (
     <section id="about" className="py-20 bg-secondary/20">
@@ -49,17 +54,10 @@ const About = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <h3 className="text-2xl font-semibold mb-4 text-primary">Who I Am</h3>
-            <p className="text-muted-foreground mb-6 leading-relaxed">
-              I am a dedicated Software Developer and Engineer with a strong academic background and diverse industry experience.
-              My journey includes a Masters in Machine Learning from KTH Royal Institute of Technology and a Bachelor in Computer Science from TU Delft.
-            </p>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              I have a passion for solving complex problems, whether it's through building efficient backend systems, crafting intuitive frontend interfaces, or exploring the depths of machine learning and cybersecurity.
-            </p>
-            <p className="text-muted-foreground leading-relaxed">
-              I am always open to discussing new projects and ideas.
-            </p>
+            <h3 className="text-2xl font-semibold mb-4 text-primary">Who am I?</h3>
+            <div className="text-muted-foreground mb-6 leading-relaxed whitespace-pre-line">
+              {personal.bio}
+            </div>
           </motion.div>
 
           <div className="grid grid-cols-1 gap-6">
@@ -70,11 +68,11 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 0.3 + index * 0.1 }}
-                className="bg-card p-6 rounded-xl border border-border hover:border-primary transition-colors"
+                className={`bg-card p-6 rounded-xl border border-border transition-colors ${siteConfig.enableSkillHover ? 'hover:border-primary' : ''}`}
               >
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center text-primary">
-                    {category.icon}
+                    {getLucideIcon(category.icon)}
                   </div>
                   <h4 className="text-lg font-semibold text-card-foreground">{category.title}</h4>
                 </div>

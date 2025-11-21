@@ -1,4 +1,4 @@
-import projectsData from './projects.yaml';
+import projectsData from '@config/projects.yaml';
 
 export interface Project {
     id: string;

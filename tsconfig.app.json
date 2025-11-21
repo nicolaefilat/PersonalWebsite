@@ -22,9 +22,15 @@
         "strict": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
-        "noFallthroughCasesInSwitch": true
+        "noFallthroughCasesInSwitch": true,
+        "paths": {
+            "@config/*": [
+                "./config/*"
+            ]
+        }
     },
     "include": [
-        "src"
+        "src",
+        "config"
     ]
 }

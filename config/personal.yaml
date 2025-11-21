@@ -1,0 +1,17 @@
+name: "Nicolae Filat"
+role: "Software Developer "
+email: "nicolae.filat@gmail.com"
+bio: |
+  I am a second year master's student at KTH studying Machine Learning.
+  
+  I have a passion for programming and software development in general.
+  I have experience with backend systems, frontend interfaces, low-level programming, algorithms and machine learning.
+
+  I am always open to discussing new projects and ideas.
+heroDescription: "Welcome to my website! Explore my skills, projects and more."
+github:
+  username: "nicolaeFilat"
+  url: "https://github.com/nicolaeFilat"
+linkedin:
+  name: "Nicolae Filat"
+  url: "https://linkedin.com/in/nicolaefilat"
