@@ -67,7 +67,7 @@ const ProjectDetails = () => {
                         <div className="md:col-span-2 space-y-6">
                             <div className="bg-card rounded-xl p-6 border border-border">
                                 <h2 className="text-2xl font-bold mb-4">About the Project</h2>
-                                <div className="text-muted-foreground leading-relaxed prose prose-invert max-w-none prose-a:text-primary prose-a:underline hover:prose-a:text-primary/80 prose-a:decoration-primary/50 hover:prose-a:decoration-primary">
+                                <div className="text-muted-foreground markdown-body leading-relaxed max-w-none prose-a:text-primary prose-a:underline hover:prose-a:text-primary/80 prose-a:decoration-primary/50 hover:prose-a:decoration-primary">
                                     <ReactMarkdown rehypePlugins={[rehypeRaw]}>
                                         {project.description || ''}
                                     </ReactMarkdown>

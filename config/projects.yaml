@@ -58,18 +58,43 @@
       tags: ["Java", "SpringBoot", "Microservices", "DDD"]
       image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80"
 
+    - id: line-follower
+      title: "Line Follower Robot in C"
+      date: "2023"
+      short_description: "Line follower robot on a STM32 microcontroller in C without Arduino ."
+      description: |
+        - Created a robot that follows a black line using a STM32 microcontroller in C (no Arduino)
+        - The assignment required to use low level register programming in order to understand the hardware better
+        - Read data sheets for sonar and light sensors to understand how to use the signals
+      github_url: "https://github.com/nicolaefilat/LogViewer"
+      tags: ["C", "Low-Level programming", "state machine", "STM32"]
+      image: "https://images.unsplash.com/photo-1589254066007-898d52d910d3?auto=format&fit=crop&w=800&q=80"
+
+
     - id: compiler-c-subset
       title: "Compiler for a subset of the C language"
       date: "2024-01-01"
       short_description: "Scala-based compiler generating x86 assembly for a subset of C."
       description: |
-        This project was made as part of a course about Compilers and Execution Environments. The task was to generate assembly code for a given string of c code.
-        I implemented parsing, typechecking, AST to IR and IR to assembly. My compiler was able to support all binary operators, loops and conditionals. 
+        - This project was made as part of a course about Compilers and Execution Environments. The task was to generate assembly code for a given string of c code.
+        - I implemented parsing, typechecking, AST to IR and IR to assembly. My compiler was able to support all binary operators, loops and conditionals. 
         The compiler was implemented in scala using pattern matching and recursion.
-        <br/> <br/> 
-        This is probably the <b>most difficult </b> project I have ever made so far. The code base was around 1000 lines of code of complex complier logic. The performance of the generated 
-        assembly was far from great. For any expression I would save the values on the stack and only if necessary use registers. This meant that a lot of simple would use stack allocation 
-        even though enough registers would be available. Overall it was a very challenging project but very rewarding in the end.  
+        - This is probably the <b>most difficult </b> project I have ever made so far. The code base was around 1000 lines of code of complex complier logic. 
+        
+        - The performance of the generated x86 assembly was far from great :) For any expression like `a + b` I would save the values on the stack and only after that use registers. For instance
+          `c=a+b` would require:
+          ```c
+          push a
+          push b 
+          mov rax, stack 
+          mov rcx, stack
+          add rax, rcx
+          store rax on stack
+          ```
+          This meant that a lot of simple would use stack allocation 
+          even though enough registers would be available. 
+        
+        - Overall it was a very challenging project but very rewarding in the end.  
       tags: ["Scala", "x86", "Functional Programming", "Parsing"]
       image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80"
 
@@ -89,8 +114,36 @@
       tags: ["Linux", "Docker", "FreeRadius", "OpenWRT", "Snort", "Wireguard", "FreeIPA", "WPA3", "OwnCloud"]
       image: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80"
 
+
+    - id: speech-recognition
+      title: "Speech Recognition Course"
+      date: "2024-01-04"
+      short_description: "Create a deep learning model for dual-channel speaker separation"
+      description: |
+        - Team project of 5 students where we designed, implemented, and evaluated a deep learning model for dual-channel speaker separation, aimed at isolating speech signals from two concurrent speakers using dual-microphone recordings.
+        - Generated a synthetic dataset based on the LibriSpeech corpus and adapted a U-Net-style CNN architecture for dual-channel audio. I was responsible for implementing the model and training on KTH’s GPU cluster, providing me with hands-on experience in AI/ML.
+        - Compared our model against pretrained baselines using performance metrics related to sound (SAR, SIR, SDR), gaining experience in deep learning model evaluation and comparative analysis.
+        - Structured the project report as a research paper following the NeurIPS 2016 format using LaTeX. The report included formal sections on methodology, experiments, results, discussion, and conclusion
+      tags: ["AI/ML", "Deep Learning", "Speech Recognition", "KTH", "GPU"]
+      image: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?auto=format&fit=crop&w=800&q=80"
+
 - project_group: "Free-time Projects" 
   list:
+    - id: datastax-workshop
+      title: "Mastering Agentic AI Workshop"
+      date: "2025-04-01"
+      short_description: "Hands-on workshop focused on building LLM-powered agentic AI system"
+      description: |
+        - Participated in a hands-on workshop focused on building LLM-powered agentic AI system
+        - Built an AI agent that integrated internet search, calculator functionality, and SQL database querying, and
+        employed Retrieval-Augmented Generation (RAG) to answer questions from a PDF document.
+        - Used the Langflow platform to design the agent visually through a node-graph interface, highlighting the
+        potential to build complex AI workflows with minimal coding.
+        - Gained practical exposure to modern AI tooling and the world of agentic AI.
+        - Keywords: Agentic AI, LLM, Langflow, RAG
+      tags: ["Agentic AI", "LLM", "Langflow", "RAG"]
+      image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fnewsroom.ibm.com%2Fimage%2FWX_ST_Datastax-social.png&f=1&nofb=1&ipt=bf01a580a1d262e6fe45543d8bed59ece7bd85565d8e42283b50ac687cd5e3e0"
+
     - id: log-viewer
       title: "Log Viewer"
       date: "2023-05-01"
@@ -152,6 +205,15 @@
       video_url: "https://vimeo.com/535587752"
       tags: ["Django", "Figma", "API"]
       image: "https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=800&q=80"
+   
+    - id: movies-script-helper
+      title: "Movies-Script-Helper"
+      date: "2021-02-15"
+      short_description: "Python scripts for subtitle management and directory organization."
+      github_url: "https://github.com/nicolaefilat/Movies-Script-Helper"
+      description: "Python scripts for subtitle management and directory organization."
+      tags: ["Python", "Automation"]
+      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=800&q=80"
 
     - id: ai-covid-19
       title: "AI-Covid-19"
@@ -162,14 +224,6 @@
       tags: ["C#", "Game Development", "AI", "3D"]
       image: "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?auto=format&fit=crop&w=800&q=80"
 
-    - id: movies-script-helper
-      title: "Movies-Script-Helper"
-      date: "2021-02-15"
-      short_description: "Python scripts for subtitle management and directory organization."
-      github_url: "https://github.com/nicolaefilat/Movies-Script-Helper"
-      description: "Python scripts for subtitle management and directory organization."
-      tags: ["Python", "Automation"]
-      image: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=800&q=80"
 
 - project_group: "Game development"
   list: 
@@ -177,15 +231,15 @@
       title: "Mail Man strikes again"
       date: "2019-03-01"
       short_description: "3D Unity game where a mailman delivers mail while dodging obstacles."
-      description: "3D game developed in Unity for a gamejam with the theme \"UnexpectedGame\".Because I did not have a team I have joined a team on discord with people that I did not know. I worked with two students from USA and someone else from UK.
-                    Because we the gamejam spanned two weeks we had a lot of time to try and prototype many different ideas. Unfortunately, we were too optimistic about our skills and we had to modify the initial idea of the game to something that we could implement in the given time.
-                    The idea we implemented is that the player is a mailman that has to deliver mail to the right boxes. The player can throw the mail to deliver it to the matching mail box. To make the game more challenging we added a timer for each level. In higher levels, boxes drop from the \"sky\" that block you from throwing the mail.
-                    We have added more crazy ideas such as dynamite for destroying the boxes. You can see the game submission at the url on top. 
-                    During this experience I have learned how to communicate in a team and how to be clear about my expectations from the other team members. Unfortunately, half way through the project, one team member was disappointed by the fact that we limit the scope of the game too much and decided to leave the team.
-                    However, we handled the situation correctly and we continued the project without any hard feelings.
-                    I have also learned how to structure the code better and it was my first project on Github where I would have another contributor apart from myself (haha).
-                    It was this project that taught me how to solve merge conflicts, create branches and work with git in a more proficient way.
-                    "
+      description: |
+        - Developed a 3D game in Unity during a two-week game jam with the theme “UnexpectedGame”. I collaborated remotely with two students from the USA and one from the UK.
+        - Implemented core gameplay mechanics involving a mailman delivering mail using a throwing mechanic, along with challenges such as timers, obstacles, and destructible elements.
+        - Adapted project scope effectively under time constraints and Managed team conflict constructively after one member left mid-project.
+        - First experience collaborating via GitHub with multiple contributors, which helped improve my understanding of version control, code structure, and documentation practices.
+        - During this experience I have learned how to communicate in a team and how to be clear about my expectations from the other team members. Unfortunately, half way through the project, one team member was disappointed by the fact that we limit the scope of the game too much and decided to leave the team.
+          However, we handled the situation correctly and we continued the project without any hard feelings.
+        - I have also learned how to structure the code better and it was my first project on Github where I would have another contributor apart from myself (haha).
+          It was this project that taught me how to solve merge conflicts, create branches and work with git in a more proficient way.
       video_url:  "https://agyscon.itch.io/the-mail-man-strikes-again"
       tags: ["Unity", "Game Design", "Git", "C#"]
       image: "https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&w=800&q=80"
@@ -196,10 +250,9 @@
       short_description: "2D platformer game with unique enemy control mechanics."
       description: |
         2D platformer game developed in Unity for a gamejam over a span of one weekend during university.  This project taught me how to be pragmatic and realistic about what features to implement given the limited time availability. 
-        <br/> <br/>
-        Even though the time span was short, 
-        I managed to implement some game mechanics that I have never implemented before. One of such mechanics is that once you jump on the head of the enemy you can control the enemy player to use him to your advantage.
-        <br/> The game is available for download on <a class="link" href="https://p31ikan.itch.io/try-to-speedrun-this">itch.io</a>
+        
+        - Even though the time span was short,  I managed to implement some game mechanics that I have never implemented before. One of such mechanics is that once you jump on the head of the enemy you can control the enemy player to use him to your advantage.
+        - The game is available for download on <a class="link" href="https://p31ikan.itch.io/try-to-speedrun-this">itch.io</a>
       github_url: "https://github.com/piotr-cichon/VGDC-Fall-Game-Jam-2021/"
       video_url: "https://vimeo.com/648383998"
       tags: ["Unity", "Game Design"]
@@ -210,9 +263,12 @@
       date: "2023-02-15"
       short_description: "Reversed billiards game developed for a game jam."
       description: |
-        2D game developed in Unity for a gamejam with the theme Reversed. I have developed with game together with my brother over one weekend. My brother came up with a nice idea of a game that fits the theme and I have helped him implement the programming side of the Game.
-        After the game loop was ready I have designed some nice levels with my brother. In the end I would say the game was a success, especially the use of motivating music
-        <br/> The game is available for download on <a class="link" href="https://nickk2002.itch.io/reversed-8ball">itch.io</a>
+        - 2D game developed in Unity for a gamejam with the theme _Reversed_
+        
+        - I have developed with game together with my brother over one weekend. My brother came up with a nice idea of a game that fits the theme and I have helped him implement the programming side of the Game.
+        - The game idea is that instead of shooting the balls into the pockets, you _tilt_ the table up/down/left/right for the balls to go in a certain order (i.e. 1,2,3,4,..8)
+        - After the game loop was ready I have designed some nice levels with my brother. In the end I would say the game was a success, especially the use of motivating music
+        - The game is available for download on <a class="link" href="https://nickk2002.itch.io/reversed-8ball">itch.io</a>
       video_url:  "https://nickk2002.itch.io/reversed-8ball"
       tags: ["Unity", "Game Design"]
       image: "https://img.itch.zone/aW1hZ2UvMjE2MTYxMy8xMjczNjI2Ni5wbmc=/347x500/a5x%2FQi.png"
@@ -224,8 +280,9 @@
       date: "2023-01-01"
       short_description: "Hunting for web vulnerabilities like XSS and CSRF on HackerOne."
       description: | 
-        After taking the Ethical Hacking course I started searching for bugs on the Hackone bug bounty platform. I did not manage to find any real few bugs in the past months but I am not giving up yet.
-        I mostly focus on web exploitation bugs such as XSS and CSRF. I have done a few labs on PortSwigger to learn common web vulnerabilities and how to exploit them.
+        - After taking the Ethical Hacking course I started searching for bugs on the Hackone bug bounty platform. I did not manage to find any real few bugs in the past months but I am not giving up yet.
+        - I mostly focus on web exploitation bugs such as XSS and CSRF. 
+        - I have done a few labs on PortSwigger to learn common web vulnerabilities and how to exploit them.
       tags: ["Bug Bounty", "Hackerone"]
       image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fres.cloudinary.com%2Fstartup-grind%2Fimage%2Fupload%2Fc_fill%2Cdpr_2.0%2Cf_auto%2Cg_center%2Ch_900%2Cq_auto%3Agood%2Cw_1200%2Fv1%2Fgcs%2Fplatform-data-hackerone%2Fcontentbuilder%2Fsocial_image.png&f=1&nofb=1&ipt=75088c5962cf2fc9372fdb2955d363303f492e0511c044b43bb5f9abef6e326b"
 

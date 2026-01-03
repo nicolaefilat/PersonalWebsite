@@ -79,3 +79,19 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-muted-foreground;
 }
+
+/* Without this the list would not render */
+li{
+  list-style: disc;
+}
+
+/* GitHub Markdown CSS Overwrites for dark mode */
+.dark .markdown-body {
+  --fgColor-default: #f0f6fc;
+  --fgColor-muted: #9198a1;
+  --fgColor-accent: #4493f8;
+  --bgColor-default: #0d1117;
+  --bgColor-muted: #151b23;
+  --borderColor-default: #3d444d;
+  --borderColor-muted: #3d444db3;
+}
